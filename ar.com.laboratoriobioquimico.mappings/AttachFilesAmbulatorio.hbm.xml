@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="AttachFilesAmbulatorio" table="attach_files_ambulatorio" dynamic-update="true">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <id name="Id" column ="ID" type="string">
+      <generator class="assigned"/>
+    </id>
+    
+    <property name="Archivo" column="archivo" not-null="false" type="string"/>   
+    <property name="Fecha" column="fecha" not-null="false" type="date"/>   
+    <property name="Protocolo" column="protocolo" not-null="false" type="string"/>
+    <property name="Original" column="original" not-null="false" type="string"/>
+
+  </class>
+
+</hibernate-mapping>

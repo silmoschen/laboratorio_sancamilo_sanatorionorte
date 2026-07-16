@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="Logs" table="logs">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <id name="Id" column ="ID" type="string" unsaved-value="0">
+      <generator class="assigned"/>
+    </id>
+
+    <property name="Descrip" column="descrip" not-null="false" type="string"/>
+    <property name="Fechahora" column="fecha_hora" not-null="false" type="datetime"/>
+    
+    <many-to-one name="User" class="Users" column="fk_user" />
+    <many-to-one name="Profesional" class="ProfesionalesUsers" column="fk_profesional" />
+       
+  </class>
+
+</hibernate-mapping>

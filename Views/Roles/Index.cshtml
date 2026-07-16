@@ -1,0 +1,119 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.utiles.PaginadorGenerico<laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.Roles>
+<div class="row">
+    <div class="col-sm-12">
+        @using (Html.BeginForm("Index", "Roles", FormMethod.Post, new { enctype = "form" }))
+        {
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="text" name="txtbuscar" value="" class="form-control" placeholder="Introduzca valor a buscar ..." />
+                </div>
+                <div class="col-sm-6">
+                    <input type="submit" class="btn btn-info" value="Buscar" />
+                    <input type="button" class="btn btn-primary" value="Nuevo" onclick="location.href='@Url.Action("Create", "Roles")'" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Descripción
+            </th>
+            <th>
+                Nivel
+            </th>
+            <th>
+                Editar
+            </th>
+            <th>
+                Borrar
+            </th>
+        </tr>
+    </thead>
+    @{
+        if (Model.Resultado != null)
+        {
+            foreach (var c in Model.Resultado) // Print the list
+            {
+                <tr>
+                    <td valign="top" width="80%">
+                        @c.Descrip
+                    </td>
+                    <td valign="top">
+                        @c.Nivel
+                    </td>
+                    <td valign="top" width="5">
+                        @using (Html.BeginForm("Delete", "Roles", new { id = c.Id }, FormMethod.Post, new { style = "display:inline;", onsubmit = "return confirm('Seguro para Eliminar Rol " + @c.Descrip + " ?');" }))
+                        {
+                            @Html.AntiForgeryToken()                            
+                            <input type="submit" value="Eliminar" class="btn btn-danger" color="white;" />
+                        }
+                    </td>
+                    <td valign="top">
+                        @Html.ActionLink("Editar", "Edit", "Roles", new { id = @c.Id }, new { @class = "btn btn-warning", @style = "color:white" })
+                    </td>
+                </tr>
+            }
+
+        }
+    }
+</table>
+<p />
+<div class="text-danger">
+    @ViewBag.error
+</div>
+<div align="center">
+    @if (Model.Resultado.Count() > 0)
+    {
+        <span>
+            <strong>@Model.TotalRegistros</strong> registros encontrados
+        </span>
+        <span>&nbsp;|&nbsp;</span>
+        <span>
+            Página <strong>@(Model.PaginaActual)</strong> de
+            <strong>@Model.TotalPaginas</strong>
+        </span>
+        <span>&nbsp;|&nbsp;</span>
+    }
+    else
+    {
+        <span>No hay resultados para esta búsqueda</span>
+        <span>&nbsp;|&nbsp;</span>
+    }
+
+    @if (Model.PaginaActual > 1)
+    {
+        @Html.ActionLink("<<", "Index", new { pagina = 1 },
+                             new { @class = "btn btn-sm btn-default" })
+        <span></span>
+        @Html.ActionLink("Anterior", "Index", new { pagina = Model.PaginaActual - 1 },
+                             new { @class = "btn btn-sm btn-default" })
+    }
+    else
+    {
+        @Html.ActionLink("<<", "Index", new { pagina = 1 },
+                             new { @class = "btn btn-sm btn-default disabled" })
+        <span></span>
+        @Html.ActionLink("Anterior", "Index", new { pagina = 1 },
+                             new { @class = "btn btn-sm btn-default disabled" })
+    }
+    <span></span>
+    @if (Model.PaginaActual < Model.TotalPaginas)
+    {
+        @Html.ActionLink("Siguiente", "Index", new { pagina = Model.PaginaActual + 1 },
+                             new { @class = "btn btn-sm btn-default" })
+        <span></span>
+        @Html.ActionLink(">>", "Index", new { pagina = Model.TotalPaginas },
+                             new { @class = "btn btn-sm btn-default" })
+    }
+    else
+    {
+        @Html.ActionLink("Siguiente", "Index", new { pagina = Model.TotalPaginas - 1 },
+                             new { @class = "btn btn-sm btn-default disabled" })
+        <span></span>
+        @Html.ActionLink(">>", "Index", new { pagina = Model.TotalPaginas },
+                             new { @class = "btn btn-sm btn-default disabled" })
+    }
+</div>

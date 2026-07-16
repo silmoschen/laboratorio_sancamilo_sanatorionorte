@@ -1,0 +1,111 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.utiles.PaginadorGenerico<laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudes>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Fecha
+            </th>
+            <th>
+                Protocolo
+            </th>
+            <th>
+                Paciente
+            </th>
+            <th>
+                Nro.Doc.
+            </th>
+            <th>
+                Obra Social
+            </th>
+            <th>
+                Profesional
+            </th>
+            <th>
+                Resultado
+            </th>
+        </tr>
+    </thead>
+    @{
+        if (Model.Resultado != null)
+        {
+            foreach (var c in Model.Resultado) // Print the list
+            {
+
+                {
+                    <tr>
+                        <td valign="top">
+                            @c.fecha1
+                        </td>
+                        <td valign="top">
+                            @c.nrosolicitud
+                        </td>
+                        <td valign="top" width="20%">
+                            @c.paciente.nombre
+                            @if (c.mensaje != null)
+                            {
+                                if (c.mensaje != "")
+                                {
+                                    <span style="font-size:8.0pt">
+                                        <span style="color:rebeccapurple">
+                                            <br />
+                                            @c.mensaje
+                                        </span>
+                                    </span>
+                                }
+                            }
+
+                            @if (c.archivosAdjuntos.Count > 0)
+                            {
+                                @:<span style="font-size:8.0pt">
+                                    @:<ul type="square">
+                                        for (var i = 0; i <= @c.archivosAdjuntos.Count - 1; i++)
+                                        {
+                                            @:
+                                            <li style="color:navy" onclick="list('@c.archivosAdjuntos[i].Archivo')">@c.archivosAdjuntos[i].Archivo</li>
+                                        }
+                                        @:
+                                    @:</ul>
+                                @:</span>
+                            }
+                        </td>
+                        <td valign="top">
+                            @c.paciente.nrodoc
+                        </td>
+                        <td valign="top" width="20%">
+                            @c.obrasocial.nombre
+                        </td>
+                        <td valign="top">
+                            @if (c.profesional != null)
+                            {
+                                @c.profesional.nombre
+                            }
+                        </td>
+                        <td valign="top" width="15%">
+                            @{
+                                if (@Session["Rol"] != null)
+                                {
+                                    if (@Session["Rol"].ToString().Equals("2"))
+                                    {
+                                        <a href="javascript:onclick(loadResult('@c.nrosolicitud'))" class="btn btn-warning" style="color:white">
+                                            Resultado
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a href="javascript:onclick(loadProtocol('@c.nrosolicitud'))" class="btn btn-info" style="color:white">
+                                            Cargar
+                                        </a>
+                                    }
+                                }
+                            }
+                            <a href="javascript:onclick(sendProtocol(`@c.nrosolicitud`))" class="btn btn-warning" style="color:white">
+                                @@
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+            }
+        }
+    }
+</table>

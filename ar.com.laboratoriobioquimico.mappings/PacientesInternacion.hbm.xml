@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="PacientesInternacion" table="pacientes_internacion" dynamic-update="true">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <id name="codpac" column ="codpac" type="string" unsaved-value="0">
+      <generator class="assigned"/>
+    </id>
+    
+    <property name="nombre" column="nombre" not-null="false" type="string"/>   
+    <property name="nrodoc" column="nrodoc" not-null="false" type="string"/>
+    <property name="opt1" column="opt1" type="string"/>
+    <property name="opt2" column="opt2" type="string"/>
+    <property name="opt3" column="opt3" type="string"/>
+    <property name="opt4" column="opt4" type="string"/>
+    <property name="opt5" column="opt5" type="string"/>
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+﻿<p>
+    <iframe id="content" width="100%" height="400" frameborder="0" src=@Url.Content("/PrintReport/PrintReport/ReportProtocoloResult")></iframe>
+</p>
+@{
+    if (!@Session["Rol"].ToString().Equals("2"))
+    {
+        <input type="button" value="Finalizar" class="btn btn-default" onclick="location.href='@Url.Action("returnProtocol", "AnalisisResultados")'" />
+    }
+    else
+    {
+        <input type="button" value="Finalizar" class="btn btn-default" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultados")'" />
+    }
+}

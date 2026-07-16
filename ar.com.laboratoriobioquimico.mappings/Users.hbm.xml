@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="Users" table="users" dynamic-update="true">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <id name="Id" column ="ID" type="long" unsaved-value="0">
+      <generator class="native"/>
+    </id>
+
+    <property name="Usuario" column="usuario" unique="true" not-null="false" type="string"/>
+    <property name="Pass" column="pass" not-null="false" type="string"/>
+    <property name="Nombre" column="nombre" not-null="false" type="string"/>    
+    <property name="Baja" column="baja" type="bool"/>
+    <property name="Observaciones" column="observaciones"  type="string"/>  
+
+    <many-to-one name="Rol" class="Roles" column="fk_rol" />    
+       
+  </class>
+
+</hibernate-mapping>

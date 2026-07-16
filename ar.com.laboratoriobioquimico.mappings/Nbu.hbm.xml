@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="Nbu" table="nbu" dynamic-update="true">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <id name="codigo" column ="codigo" type="string" unsaved-value="0">
+      <generator class="assigned"/>
+    </id>
+    
+    <property name="descrip" column="descrip" not-null="false" type="string"/>   
+    <property name="unidad" column="unidad" not-null="false" type="double"/>   
+    <property name="especial" column="especial" not-null="false" type="string"/>   
+    <property name="unidades" column="unidades" not-null="false" type="double"/>   
+    <property name="codnnn" column="codnnn" not-null="false" type="string"/>   
+
+  </class>
+
+</hibernate-mapping>

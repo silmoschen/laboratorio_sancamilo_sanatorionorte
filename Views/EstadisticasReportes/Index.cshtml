@@ -1,0 +1,41 @@
+﻿@model laboratoriobioquimico.Models.ModelEstadistica
+@using (Html.BeginForm("Generar", "EstadisticasReportes", FormMethod.Post, new { enctype = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <legend>Reportes Estadísticos</legend>
+        <div class="row">
+            <div class="col-sm-2">
+                Desde
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.desde, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
+                <p />
+            </div>
+            <div class="col-sm-2">
+                Hasta
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.hasta, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
+                <p />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Estadística
+            </div>
+            <div class="col-sm-8">
+                @Html.DropDownList("reporte", ViewData["reportes"] as List<SelectListItem>, new { @class = "form-control" })
+                <p />
+            </div>
+        </div>
+
+        <p>
+            <input type="submit" value="Generar" class="btn btn-success" />
+        </p>
+    </fieldset>
+}
+<div class="text-danger">
+    @ViewBag.error
+</div>

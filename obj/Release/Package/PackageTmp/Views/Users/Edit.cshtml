@@ -1,0 +1,70 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.Users
+@using (Html.BeginForm("Save", "Users", FormMethod.Post, new { enctype = "form" }))
+{
+    <fieldset>
+        <legend>Usuario</legend>
+        @Html.HiddenFor(model => model.Id)
+        <div class="row">
+            <div class="col-sm-2">
+                Usuario
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Usuario, new { @class = "form-control", @placeholder = "Usuario" })
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Contraseña
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Pass, new { @class = "form-control", @placeholder = "Contraseña" })
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Nombre
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", @placeholder = "Nombre del Usuario" })
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Observaciones
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Observaciones, new { @class = "form-control", @placeholder = "Observaciones" })
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Rol
+            </div>
+            <div class="col-sm-10">
+                @Html.DropDownList("Rol.Id", ViewData["roles"] as List<SelectListItem>, new { @class = "form-control" })
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-10">
+                @Html.CheckBoxFor(model => model.Baja)
+                Inhabilitar este Usuario
+                <p />
+            </div>
+        </div>
+        <br />
+        <p>
+            <input type="submit" value="Guardar" class="btn btn-success" />
+            <input type="button" value="Cancelar" class="btn btn-default" onclick="location.href='@Url.Action("Index", "Users")'" />
+        </p>
+    </fieldset>
+}
+<div class="text-danger">
+    @ViewBag.error
+</div>

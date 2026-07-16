@@ -1,0 +1,139 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudes
+@using (Html.BeginForm("PrintResult", "AnalisisResultados", FormMethod.Post, new { enctype = "form" }))
+{
+    <div class="row">
+        <div class="col-sm-1">
+            Prot/Id
+        </div>
+        <div class="col-sm-2">
+            <b>
+                @Html.DisplayFor(model => model.nrosolicitud)
+            </b>
+            <p />
+        </div>
+        <div class="col-sm-1">
+            Paciente
+        </div>
+        <div class="col-sm-4">
+            <b>
+                @Html.DisplayFor(model => model.paciente.nombre)
+            </b>
+            <p />
+        </div>
+        <div class="col-sm-1">
+            Fecha
+        </div>
+        <div class="col-sm-3">
+            <b>
+                @Model.fecha1
+            </b>
+            <p />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            O.Social
+        </div>
+        <div class="col-sm-2">
+            <b>
+                @Html.DisplayFor(model => model.obrasocial.nombre)
+            </b>
+            <p />
+        </div>
+        <div class="col-sm-1">
+            Médico
+        </div>
+        <div class="col-sm-3">
+            <b>
+                @Html.DisplayFor(model => model.profesional.nombre)
+            </b>
+            <p />
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-4">
+            <p />
+        </div>
+    </div>
+
+    @Html.HiddenFor(model => model.nrosolicitud)
+    
+    var lista = Model.practicas;
+
+
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Prácticas</h2>
+        </div>
+        <div class="col-sm-3">
+            @if (@lista != null)
+            {
+                <br />
+                <input type="submit" value="Generar Resultado" class="btn btn-success" />
+                <input type="button" value="Retornar" class="btn btn-default" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultados")'" />
+            }
+
+        </div>
+    </div>
+
+    <hr />
+
+    if (@lista != null)
+    {
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Items
+                    </th>
+                    <th>
+                        Código
+                    </th>
+                    <th>
+                        Descripción Práctica
+                    </th>
+                    <th>
+                        RC
+                    </th>
+                    <th>
+                        Sel
+                    </th>
+                    <th>
+                        Resultado
+                    </th>
+                </tr>
+            </thead>
+
+
+            @for (int i = 0; i < Model.practicas.Count; i++)
+            {
+                <tr>
+                    <td valign="top">
+                        @Model.practicas[i].ID.items
+                        @Html.HiddenFor(model => model.practicas[i].ID.items)
+                    </td>
+                    <td valign="top">
+                        @Model.practicas[i].codigo
+                    </td>
+                    <td valign="top" width="50%">
+                        @Model.practicas[i].determinacion
+                    </td>
+                    <td valign="top">
+                        @Model.practicas[i].cargado
+                    </td>
+                    <td valign="top">                        
+                        @Html.CheckBoxFor(model => model.practicas[i].Select)
+                    </td>
+                    <td valign="top">
+                        @Html.ActionLink("Cargar", "EditItem", "AnalisisResultados", new { id = @Model.practicas[i].ID.nrosolicitud, p2 = @Model.practicas[i].codigo, p3 = @Model.practicas[i].ID.items }, new { @class = "btn btn-primary", @style = "color:white" })
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+}
+
+<div class="text-danger">
+    @ViewBag.error
+</div>

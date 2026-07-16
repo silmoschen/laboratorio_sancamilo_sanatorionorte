@@ -1,0 +1,138 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudes
+@using (Html.BeginForm("SendMailTo", "AnalisisResultados", FormMethod.Post, new { enctype = "form" }))
+{
+    @Html.HiddenFor(model => model.nrosolicitud)
+
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Envío de Resultados por email
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-2">
+                        Para
+                    </div>
+                    <div class="col-sm-9">
+                        @Html.TextBoxFor(model => model.emailpara, new { autocomplete = "off" })
+                        <p />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        Título
+                    </div>
+                    <div class="col-sm-9">
+                        @Html.TextBoxFor(model => model.emailtitulo, new { autocomplete = "off" })
+                        <p />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        Mensaje
+                    </div>
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.emailbody)
+                        <p />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <input type="submit" value="Enviar Correo" class="btn btn-success" />
+            <input type="button" value="Finalizar" class="btn btn-default" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultados")'" />
+        </div>
+        <div class="col-sm-6">
+            <input type="button" class="btn btn-info" value="Adjuntar Archivo(s)" onclick="adjuntarArchivos()" />
+        </div>
+    </div>
+
+}
+
+<br />
+
+<table>
+    @{
+        if (Model.archivosAdjuntos.Count > 0)
+        {
+            <tr>
+                <td valign="top">
+                    <h3>
+                        Archivo(s) Adjunto(s)
+                    </h3>
+                </td>
+            </tr>
+
+            foreach (var c in Model.archivosAdjuntos) // Print the list
+            {
+
+                {
+                    <tr>
+                        <td valign="top" width="50%">
+                            @c.Original
+                        </td>
+                        <td valign="top" align="right" width="10%">
+                            <input type="button" value="X" onclick="deleteFile('@c.Id', '@c.Original', '@c.Protocolo')" />
+                        </td>
+                    </tr>
+
+                }
+            }
+        }
+    }
+</table>
+
+<hr />
+<p>
+    <iframe id="content" width="100%" height="300" frameborder="0" src=@Url.Content("/PrintReport/PrintReportPDF/ReportProtocoloResult/" + @Model.nrosolicitud)>
+    </iframe>
+</p>
+<table>
+    @{
+        if (Model.logs.Count > 0)
+        {
+            <tr>
+                <td valign="top">
+                    <h3>
+                        Envios Realizados
+                    </h3>
+                </td>
+            </tr>
+
+            foreach (var c in Model.logs) // Print the list
+            {
+
+                {
+                    <tr>
+                        <td valign="top">
+                            @c.fechahora
+                        </td>
+                    </tr>
+
+                }
+            }
+        }
+    }
+</table>
+
+@Html.Partial("addFiles")
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input:text,form").attr("autocomplete", "off");
+    })
+
+    function adjuntarArchivos() {
+        $('#addFilesModal').modal('show');
+    }
+
+    function deleteFile(file, orig, protocolo) {
+        if (confirm('Seguro para Eliminar Archivo ' + orig + ' ?')) {
+            var url = '/AnalisisResultados/SendMailDeleteFile/' + protocolo + '/' + file;
+            window.location.href = url;
+        }
+    }
+</script>

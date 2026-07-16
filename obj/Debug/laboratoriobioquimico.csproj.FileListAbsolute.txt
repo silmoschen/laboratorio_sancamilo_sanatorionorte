@@ -1,0 +1,685 @@
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\obj\Debug\RdlCompile.cache
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\obj\Debug\RdlCompile.compiled
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.csproj.CoreCompileInputs.cache
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\SqlServerTypes\x64\msvcr120.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\SqlServerTypes\x86\msvcr120.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\laboratoriobioquimico.dll.config
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\laboratoriobioquimico.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\laboratoriobioquimico.pdb
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\csc.exe
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\csc.exe.config
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\csc.rsp
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\csi.exe
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\csi.exe.config
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\csi.rsp
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.Managed.Core.targets
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.AppContext.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Collections.Immutable.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Console.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.IO.Compression.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.IO.FileSystem.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.IO.Pipes.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Reflection.Metadata.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Security.AccessControl.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Security.Claims.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Security.Principal.Windows.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.ValueTuple.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Xml.XmlDocument.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Xml.XPath.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\vbc.exe
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\vbc.exe.config
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\vbc.rsp
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\VBCSCompiler.exe
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\roslyn\VBCSCompiler.exe.config
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Antlr3.Runtime.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\BouncyCastle.Crypto.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Common.Logging.Core.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Common.Logging.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Google.Protobuf.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Iesi.Collections.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\log4net.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Microsoft.ReportViewer.Common.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Microsoft.ReportViewer.WebForms.DLL
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Microsoft.SqlServer.Types.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Microsoft.Web.Infrastructure.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\MySql.Data.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Newtonsoft.Json.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\NHibernate.Caches.SysCache2.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\NHibernate.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Remotion.Linq.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Remotion.Linq.EagerFetching.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Renci.SshNet.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Aop.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Core.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Data.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Data.NHibernate5.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Web.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Net.Http.Formatting.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Helpers.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Http.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Http.WebHost.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Mvc.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Optimization.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Razor.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.WebPages.Deployment.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.WebPages.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.WebPages.Razor.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\WebGrease.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Antlr3.Runtime.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Common.Logging.pdb
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Common.Logging.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Common.Logging.Core.pdb
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Common.Logging.Core.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Google.Protobuf.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Iesi.Collections.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\log4net.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\MySql.Data.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\NHibernate.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\NHibernate.Caches.SysCache2.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Remotion.Linq.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Remotion.Linq.EagerFetching.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Renci.SshNet.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Aop.pdb
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Core.pdb
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Data.pdb
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Data.NHibernate5.pdb
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Spring.Web.pdb
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Helpers.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Mvc.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Optimization.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Razor.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.WebPages.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.WebPages.Deployment.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.WebPages.Razor.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Newtonsoft.Json.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Net.Http.Formatting.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Http.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\System.Web.Http.WebHost.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Web.Helpers.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Web.Mvc.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Web.Optimization.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Web.Razor.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Web.WebPages.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Net.Http.Formatting.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Web.Http.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\es\System.Web.Http.WebHost.resources.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.csproj.CopyComplete
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.pdb
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\RestSharp.dll
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\bin\RestSharp.xml
+C:\sidelphi32\ASPNet\springNET\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.csprojAssemblyReference.cache
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\SqlServerTypes\x64\msvcr120.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\SqlServerTypes\x86\msvcr120.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\laboratoriobioquimico.dll.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\laboratoriobioquimico.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\laboratoriobioquimico.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\csc.exe
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\csc.exe.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\csc.rsp
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\csi.exe
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\csi.exe.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\csi.rsp
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.Managed.Core.targets
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.AppContext.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Collections.Immutable.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Console.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.IO.Compression.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.IO.FileSystem.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.IO.Pipes.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Reflection.Metadata.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Security.AccessControl.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Security.Claims.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Security.Principal.Windows.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.ValueTuple.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Xml.XmlDocument.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Xml.XPath.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\vbc.exe
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\vbc.exe.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\vbc.rsp
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\VBCSCompiler.exe
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\roslyn\VBCSCompiler.exe.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Antlr3.Runtime.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\BouncyCastle.Crypto.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Common.Logging.Core.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Common.Logging.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Google.Protobuf.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Iesi.Collections.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\log4net.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Microsoft.ReportViewer.Common.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Microsoft.ReportViewer.WebForms.DLL
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Microsoft.SqlServer.Types.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Microsoft.Web.Infrastructure.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\MySql.Data.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Newtonsoft.Json.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\NHibernate.Caches.SysCache2.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\NHibernate.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Remotion.Linq.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Remotion.Linq.EagerFetching.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Renci.SshNet.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\RestSharp.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Aop.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Core.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Data.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Data.NHibernate5.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Web.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Net.Http.Formatting.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Helpers.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Http.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Http.WebHost.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Mvc.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Optimization.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Razor.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.WebPages.Deployment.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.WebPages.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.WebPages.Razor.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\WebGrease.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Antlr3.Runtime.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Common.Logging.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Common.Logging.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Common.Logging.Core.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Common.Logging.Core.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Google.Protobuf.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Iesi.Collections.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\log4net.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\MySql.Data.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\NHibernate.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\NHibernate.Caches.SysCache2.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Remotion.Linq.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Remotion.Linq.EagerFetching.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Renci.SshNet.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\RestSharp.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Aop.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Core.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Data.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Data.NHibernate5.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\Spring.Web.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Net.Http.Formatting.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Http.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Http.WebHost.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Optimization.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Helpers.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Mvc.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.Razor.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.WebPages.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.WebPages.Deployment.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\System.Web.WebPages.Razor.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Net.Http.Formatting.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Web.Http.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Web.Http.WebHost.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Web.Optimization.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Web.Helpers.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Web.Mvc.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Web.Razor.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Web.WebPages.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.csprojAssemblyReference.cache
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\obj\Debug\RdlCompile.cache
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\obj\Debug\RdlCompile.compiled
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.csproj.CoreCompileInputs.cache
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.csproj.CopyComplete
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\SqlServerTypes\x64\msvcr120.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\SqlServerTypes\x86\msvcr120.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\laboratoriobioquimico.dll.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\laboratoriobioquimico.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\laboratoriobioquimico.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\csc.exe
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\csc.exe.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\csc.rsp
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\csi.exe
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\csi.exe.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\csi.rsp
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.Managed.Core.targets
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.AppContext.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Collections.Immutable.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Console.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.IO.Compression.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.IO.FileSystem.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.IO.Pipes.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Reflection.Metadata.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Security.AccessControl.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Security.Claims.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Security.Principal.Windows.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.ValueTuple.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Xml.XmlDocument.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Xml.XPath.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\vbc.exe
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\vbc.exe.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\vbc.rsp
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\VBCSCompiler.exe
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\roslyn\VBCSCompiler.exe.config
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Antlr3.Runtime.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\BouncyCastle.Crypto.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Common.Logging.Core.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Common.Logging.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Google.Protobuf.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Iesi.Collections.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\log4net.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Microsoft.ReportViewer.Common.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Microsoft.ReportViewer.WebForms.DLL
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Microsoft.SqlServer.Types.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Microsoft.Web.Infrastructure.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\MySql.Data.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Newtonsoft.Json.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\NHibernate.Caches.SysCache2.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\NHibernate.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Remotion.Linq.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Remotion.Linq.EagerFetching.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Renci.SshNet.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\RestSharp.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Aop.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Core.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Data.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Data.NHibernate5.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Web.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Net.Http.Formatting.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Helpers.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Http.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Http.WebHost.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Mvc.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Optimization.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Razor.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.WebPages.Deployment.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.WebPages.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.WebPages.Razor.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\WebGrease.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Antlr3.Runtime.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Common.Logging.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Common.Logging.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Common.Logging.Core.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Common.Logging.Core.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Google.Protobuf.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Iesi.Collections.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\log4net.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\MySql.Data.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\NHibernate.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\NHibernate.Caches.SysCache2.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Remotion.Linq.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Remotion.Linq.EagerFetching.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Renci.SshNet.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\RestSharp.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Aop.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Core.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Data.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Data.NHibernate5.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\Spring.Web.pdb
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Net.Http.Formatting.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Http.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Http.WebHost.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Optimization.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Helpers.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Mvc.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.Razor.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.WebPages.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.WebPages.Deployment.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\System.Web.WebPages.Razor.xml
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Net.Http.Formatting.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Web.Http.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Web.Http.WebHost.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Web.Optimization.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Web.Helpers.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Web.Mvc.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Web.Razor.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Web.WebPages.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.csproj.AssemblyReference.cache
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.csproj.CoreCompileInputs.cache
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\obj\Debug\laborato.49BC7BCF.Up2Date
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.dll
+C:\sidelphi32\ASPNet\springNET\labsancamilo - vers. final\laboratoriobioquimico\obj\Debug\laboratoriobioquimico.pdb
+F:\sancamilo\laboratoriosancamilo-master\bin\SqlServerTypes\x64\msvcr120.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\SqlServerTypes\x86\msvcr120.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\laboratoriobioquimico.dll.config
+F:\sancamilo\laboratoriosancamilo-master\bin\laboratoriobioquimico.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\laboratoriobioquimico.pdb
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\csc.exe
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\csc.exe.config
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\csc.rsp
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\csi.exe
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\csi.exe.config
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\csi.rsp
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.Managed.Core.targets
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.AppContext.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Collections.Immutable.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Console.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.IO.Compression.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.IO.FileSystem.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.IO.Pipes.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Reflection.Metadata.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Security.AccessControl.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Security.Claims.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Security.Principal.Windows.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.ValueTuple.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Xml.XmlDocument.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Xml.XPath.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\vbc.exe
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\vbc.exe.config
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\vbc.rsp
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\VBCSCompiler.exe
+F:\sancamilo\laboratoriosancamilo-master\bin\roslyn\VBCSCompiler.exe.config
+F:\sancamilo\laboratoriosancamilo-master\bin\Antlr3.Runtime.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\BouncyCastle.Crypto.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Common.Logging.Core.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Common.Logging.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Google.Protobuf.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Iesi.Collections.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\log4net.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Microsoft.ReportViewer.Common.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+F:\sancamilo\laboratoriosancamilo-master\bin\Microsoft.ReportViewer.WebForms.DLL
+F:\sancamilo\laboratoriosancamilo-master\bin\Microsoft.SqlServer.Types.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Microsoft.Web.Infrastructure.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\MySql.Data.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Newtonsoft.Json.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\NHibernate.Caches.SysCache2.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\NHibernate.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Remotion.Linq.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Remotion.Linq.EagerFetching.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Renci.SshNet.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\RestSharp.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Aop.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Core.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Data.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Data.NHibernate5.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Web.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Net.Http.Formatting.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Helpers.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Http.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Http.WebHost.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Mvc.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Optimization.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Razor.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.WebPages.Deployment.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.WebPages.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.WebPages.Razor.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\WebGrease.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\Antlr3.Runtime.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\Common.Logging.pdb
+F:\sancamilo\laboratoriosancamilo-master\bin\Common.Logging.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\Common.Logging.Core.pdb
+F:\sancamilo\laboratoriosancamilo-master\bin\Common.Logging.Core.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\Google.Protobuf.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\Iesi.Collections.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\log4net.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\MySql.Data.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\NHibernate.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\NHibernate.Caches.SysCache2.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\Remotion.Linq.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\Remotion.Linq.EagerFetching.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\Renci.SshNet.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\RestSharp.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Aop.pdb
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Core.pdb
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Data.pdb
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Data.NHibernate5.pdb
+F:\sancamilo\laboratoriosancamilo-master\bin\Spring.Web.pdb
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Net.Http.Formatting.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Http.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Http.WebHost.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Optimization.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Helpers.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Mvc.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.Razor.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.WebPages.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.WebPages.Deployment.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\System.Web.WebPages.Razor.xml
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Net.Http.Formatting.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Web.Http.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Web.Http.WebHost.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Web.Optimization.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Web.Helpers.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Web.Mvc.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Web.Razor.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Web.WebPages.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Web.WebPages.Deployment.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\bin\es\System.Web.WebPages.Razor.resources.dll
+F:\sancamilo\laboratoriosancamilo-master\obj\Debug\laboratoriobioquimico.csproj.AssemblyReference.cache
+F:\sancamilo\laboratoriosancamilo-master\obj\Debug\laboratoriobioquimico.csproj.CoreCompileInputs.cache
+F:\sancamilo\laboratoriosancamilo-master\obj\Debug\laborato.49BC7BCF.Up2Date
+F:\sancamilo\laboratoriosancamilo-master\obj\Debug\laboratoriobioquimico.dll
+F:\sancamilo\laboratoriosancamilo-master\obj\Debug\laboratoriobioquimico.pdb
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\SqlServerTypes\x64\msvcr120.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\SqlServerTypes\x86\msvcr120.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\laboratoriobioquimico.dll.config
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\laboratoriobioquimico.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\laboratoriobioquimico.pdb
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\csc.exe
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\csc.exe.config
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\csc.rsp
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\csi.exe
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\csi.exe.config
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\csi.rsp
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.Managed.Core.targets
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.AppContext.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Collections.Immutable.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Console.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.IO.Compression.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.IO.FileSystem.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.IO.Pipes.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Reflection.Metadata.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Security.AccessControl.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Security.Claims.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Security.Principal.Windows.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.ValueTuple.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Xml.XmlDocument.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Xml.XPath.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\vbc.exe
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\vbc.exe.config
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\vbc.rsp
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\VBCSCompiler.exe
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\roslyn\VBCSCompiler.exe.config
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Antlr3.Runtime.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\BouncyCastle.Crypto.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.Core.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Google.Protobuf.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Iesi.Collections.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\log4net.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Microsoft.ReportViewer.Common.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Microsoft.ReportViewer.WebForms.DLL
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Microsoft.SqlServer.Types.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Microsoft.Web.Infrastructure.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\MySql.Data.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Newtonsoft.Json.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\NHibernate.Caches.SysCache2.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\NHibernate.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Remotion.Linq.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Remotion.Linq.EagerFetching.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Renci.SshNet.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\RestSharp.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Aop.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Core.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Data.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Data.NHibernate5.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Web.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Net.Http.Formatting.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Helpers.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Http.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Http.WebHost.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Mvc.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Optimization.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Razor.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.WebPages.Deployment.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.WebPages.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.WebPages.Razor.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\WebGrease.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Antlr3.Runtime.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.pdb
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.Core.pdb
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.Core.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Google.Protobuf.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Iesi.Collections.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\log4net.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\MySql.Data.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\NHibernate.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\NHibernate.Caches.SysCache2.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Remotion.Linq.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Remotion.Linq.EagerFetching.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Renci.SshNet.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\RestSharp.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Aop.pdb
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Core.pdb
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Data.pdb
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Data.NHibernate5.pdb
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Web.pdb
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Net.Http.Formatting.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Http.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Http.WebHost.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Optimization.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Helpers.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Mvc.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Razor.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.WebPages.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.WebPages.Deployment.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.WebPages.Razor.xml
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Net.Http.Formatting.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Web.Http.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Web.Http.WebHost.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Web.Optimization.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Web.Helpers.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Web.Mvc.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Web.Razor.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Web.WebPages.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Web.WebPages.Deployment.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\es\System.Web.WebPages.Razor.resources.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\obj\Debug\laboratoriobioquimico.csproj.AssemblyReference.cache
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\obj\Debug\laboratoriobioquimico.csproj.CoreCompileInputs.cache
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\obj\Debug\laborato.49BC7BCF.Up2Date
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\obj\Debug\laboratoriobioquimico.dll
+F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\obj\Debug\laboratoriobioquimico.pdb

@@ -1,0 +1,92 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudesInternacionItemsResultado
+
+<div class="row">
+    <div class="col-sm-1">
+        Protocolo
+    </div>
+    <div class="col-sm-2">
+        <b>
+            @Html.DisplayFor(model => model.solicituditem.solicitud.nrosolicitud)
+        </b>
+        <p />
+    </div>
+    <div class="col-sm-1">
+        Paciente
+    </div>
+    <div class="col-sm-4">
+        <b>
+            @Html.DisplayFor(model => model.solicituditem.solicitud.paciente.nombre)
+        </b>
+        <p />
+    </div>
+    <div class="col-sm-1">
+        Fecha
+    </div>
+    <div class="col-sm-3">
+        <b>
+            @Model.solicituditem.solicitud.fecha1
+        </b>
+        <p />
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-1">
+        O.Social
+    </div>
+    <div class="col-sm-2">
+        <b>
+            @Html.DisplayFor(model => model.solicituditem.solicitud.obrasocial.nombre)
+        </b>
+        <p />
+    </div>
+    <div class="col-sm-1">
+        Médico
+    </div>
+    <div class="col-sm-3">
+        <b>
+            @Html.DisplayFor(model => model.solicituditem.solicitud.profesional.nombre)
+        </b>
+        <p />
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-4">
+        <b></b>
+        <p />
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-1">
+        Item
+    </div>
+    <div class="col-sm-10">
+        <b>
+            @Html.DisplayFor(model => model.plantilla.elemento) / </b>Práctica <b> @Html.DisplayFor(model => model.solicituditem.practica.descrip)
+        </b>
+        <p />
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("SaveObservacionResultItem", "AnalisisResultadosInternacion", FormMethod.Post, new { enctype = "form" }))
+{
+    <div class="row">
+        <div class="col-sm-1">
+            Observación
+        </div>
+        <div class="col-sm-4">
+            @Html.TextAreaFor(model => model.observaciones, new { style = "width: 800px; height: 300px;" })
+            <p />
+        </div>
+    </div>    
+    
+    @Html.HiddenFor(model => model.ID.items)
+    @Html.HiddenFor(model => model.ID.codigo)    
+    @Html.HiddenFor(model => model.solicituditem.solicitud.nrosolicitud)            
+    
+    <input type="submit" value="Guardar" class="btn btn-success" />    
+    <input type="button" value="Retornar" class="btn btn-default" onclick="location.href='@Url.Action("EditItem/" + Model.solicituditem.solicitud.nrosolicitud + "/" + Model.ID.codigo + "/" + Model.solicituditem.ID.items, "AnalisisResultadosInternacion")'" />
+    
+}
+<div class="text-danger">
+    @ViewBag.error
+</div>

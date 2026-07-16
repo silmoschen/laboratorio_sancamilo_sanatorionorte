@@ -1,0 +1,134 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.Parametros
+@using (Html.BeginForm("Save", "Parametros", FormMethod.Post, new { enctype = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <legend>Parámetros</legend>
+        @Html.HiddenFor(model => model.Id)
+        <div class="row">
+            <div class="col-sm-2">
+                Laboratorio
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Parametro1)
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Dirección
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Parametro2)
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Email
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Parametro3)
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Teléfono
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Parametro4)
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Profesional/es
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Parametro5)
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Profesión
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Parametro6)
+                <p />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+                Contraseña Genérica
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Parametro11)
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Pie Login
+            </div>
+            <div class="col-sm-10">
+                @Html.TextAreaFor(model => model.Texto2, new { style = "width: 800px; height: 300px;" })
+                <p />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+                Membrete Informe Resultados
+            </div>
+            <div class="col-sm-10">
+                @Html.EditorFor(model => model.Texto1)
+                <p />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Parámetros Servidor SMTP/POP3/IMAP
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            Servidor SMTP / Puerto
+                        </div>
+                        <div class="col-sm-4">
+                            @Html.TextBoxFor(model => model.Parametro7)
+                            <p />
+                        </div>
+                        <div class="col-sm-4">
+                            @Html.TextBoxFor(model => model.Parametro8)
+                            <p />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            Usuario / Contraseña
+                        </div>
+                        <div class="col-sm-4">
+                            @Html.TextBoxFor(model => model.Parametro9)
+                            <p />
+                        </div>
+                        <div class="col-sm-4">
+                            @Html.TextBoxFor(model => model.Parametro10)
+                            <p />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            <input type="submit" value="Guardar" class="btn btn-success" />
+        </p>
+    </fieldset>
+}
+<div class="text-danger">
+    @ViewBag.error
+</div>

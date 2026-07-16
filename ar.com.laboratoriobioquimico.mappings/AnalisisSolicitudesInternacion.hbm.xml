@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="AnalisisSolicitudesInternacion" table="analisis_solicitudes_internacion" dynamic-update="true" >
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <id name="nrosolicitud" column ="nrosolicitud" type="string" unsaved-value="0">
+      <generator class="assigned"/>
+    </id>
+    
+    <property name="protocolo" column="protocolo" not-null="false" type="string"/>
+    <property name="fecha" column="fecha" not-null="false" type="string"/>
+    <property name="version" column="version" not-null="false" type="string"/>
+    <property name="transferir" column="transferir" not-null="false" type="string"/>
+
+    <many-to-one name="paciente" class="PacientesInternacion" column="fk_paciente" />
+    <many-to-one name="obrasocial" class="ObrasSocialesInternacion" column="fk_obsocial" />
+    <many-to-one name="profesional" class="ProfesionalesInternacion" not-found="ignore" column="fk_profesional" />
+    
+    <bag name="practicas" inverse="true" cascade="all-delete-orphan">
+      <key column="fk_nrosolicitud"/>
+      <one-to-many class="AnalisisSolicitudesInternacionItems"/>
+    </bag>    
+
+  </class>
+
+</hibernate-mapping>

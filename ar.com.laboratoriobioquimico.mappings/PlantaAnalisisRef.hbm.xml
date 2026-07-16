@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="PlantaAnalisisRef" table="plantaanalisis_ref" dynamic-update="true">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <composite-id name="ID" class="PlantaAnalisisRefPK">
+      <key-property name="codigo" column="codigo" type="string"/>
+      <key-property name="items" column="items" type="string"/>
+    </composite-id>
+    
+    <property name="observaciones" column="observaciones" lazy="true" type="string"/>    
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="AnalisisSolicitudesInternacionItemsResultado" table="analisis_solicitudes_items_resultado_internacion" dynamic-update="true">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <composite-id name="ID" class="AnalisisSolicitudesInternacionItemsResultadoPK">
+      <key-property name="nrosolicitud" column="nrosolicitud" type="string"/>
+      <key-property name="codigo" column="codigo" type="string"/>
+      <key-property name="items" column="items" type="string"/>
+      <key-property name="nroanalisis" column="nroanalisis" type="string"/>
+    </composite-id>
+
+    <property name="resultado" column="resultado" not-null="false" type="string"/>
+    <property name="valoresn" column="valoresn" not-null="false" type="string"/>    
+    <property name="version" column="version" type="string"/>
+    <property name="observaciones" column="observaciones" lazy="true" type="string"/>
+
+    <many-to-one name="plantilla" class="PlantaAnalisisInternacion">
+      <column name="fk_codigo" />
+      <column name="fk_items_plantilla" />
+    </many-to-one>
+
+    <many-to-one name="solicituditem" class="AnalisisSolicitudesInternacionItems">
+      <column name="fk_nrosolicitud" />
+      <column name="fk_items" />
+    </many-to-one>
+
+  </class>
+
+</hibernate-mapping>

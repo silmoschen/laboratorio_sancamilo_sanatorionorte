@@ -1,0 +1,112 @@
+﻿
+@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.Users
+<fieldset>
+    <legend>Verificar Clave</legend>
+    <div class="row">
+        <div class="col-sm-2">
+            Clave Actual
+        </div>
+        <div class="col-sm-3">
+            @Html.PasswordFor(model => model.Pass, new { @class = "form-control", placeholder = "Ingrese Clave Actual" })
+            <p />
+        </div>
+        <div class="col-sm-1">
+            <input type="button" id="btnVerify" value="Verificar" onclick="verify()" class="btn btn-primary" />
+        </div>
+        <div class="col-sm-3">
+            <div id="divresult">
+            </div>
+        </div>
+    </div>
+    <p>
+    </p>
+</fieldset>
+<div id="divcambio">
+    <fieldset>
+        <legend>Cambiar Clave</legend>
+        <div class="row">
+            <div class="col-sm-2">
+                Nueva Clave
+            </div>
+            <div class="col-sm-3">
+                @Html.PasswordFor(model => model.Pass2, new { @class = "form-control", placeholder = "Ingrese Nueva Clave" })
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Repetir Clave
+            </div>
+            <div class="col-sm-3">
+                @Html.PasswordFor(model => model.Pass1, new { @class = "form-control", placeholder = "Repita Clave" })
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                @Html.AntiForgeryToken()
+                <input type="button" id="btnChange" value="Cambiar Contraseña" onclick="changepass()" class="btn btn-success" />
+            </div>
+            <div class="col-sm-6">
+                <div id="divres">
+                </div>
+            </div>
+        </div>
+        <p>
+        </p>
+    </fieldset>
+</div>
+<script type="text/javascript">
+    function verify() {
+        var url = '/CambiarClave/verify/';
+        var c = document.getElementById('Pass').value;
+        var tokenValue = $('input[name="__RequestVerificationToken"]').val();
+
+        $.post(url,
+        {
+            __RequestVerificationToken: tokenValue,
+            Pass1: c
+        },
+        function (data, status) {
+
+            if (data == 'OK') {
+                $("#divresult").text("Contraseña OK. Proceda a Cambiarla");
+                document.getElementById('btnVerify').disabled = true;
+                document.getElementById('Pass').disabled = true;
+                $("#divcambio").show();
+            } else {
+                $("#divresult").text('Contraseña Incorrecta');
+            }
+
+        });
+    }
+
+    function changepass() {
+
+        var url = '/CambiarClave/change/';
+        var c1 = document.getElementById('Pass2').value;
+        var c2 = document.getElementById('Pass1').value;
+
+        var tokenValue = $('input[name="__RequestVerificationToken"]').val();
+       
+        $.post(url,
+        {
+            __RequestVerificationToken: tokenValue,
+            Pass: c1,
+            Pass1: c2
+        },
+        function (data, status) {
+
+            if (data == 'OK') {
+                $("#divres").text("Contraseña Cambiada Correctamente");
+            } else {
+                $("#divres").text(data);
+            }
+
+        });
+    }
+
+    $("#divcambio").hide();
+
+</script>
+

@@ -1,0 +1,68 @@
+﻿<!-- Popup Paciente -->
+<div id="searchPacienteModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h2>
+                    Buscar Protocolo
+                </h2>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <input type="text" id="txtnom" class="form-control" placeholder="Apellido Paciente + ENTER" onkeypress="keypresspacienteprot(event);" />
+                    </div>
+                    <div class="col-sm-1">
+                        <input type="button" value="Buscar" class="btn btn-info" onclick="findPacienteProtocol()" />
+                    </div>
+                    <div class="col-sm-5">
+                        <div id="divesperapaciente">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12" id="lista" style="height: 400px; overflow: auto;">
+                            @Html.Partial("Pacientes")
+                            @Html.Partial("ProtocolosPaciente")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function findPacienteProtocol() {
+        if (document.getElementById('txtnom').value == '') {
+            alert('Introduzca Nombre del Paciente a Buscar');
+            return;
+        }
+
+        $("#divesperapaciente").html('Procesando datos, espere ...');
+
+        var url = '/AnalisisResultados/searchPacientes/' + document.getElementById('txtnom').value;
+        $.get(url, function (result) {
+            $("#lista").html(result);
+            $("#divesperapaciente").html('');
+        });
+    }
+
+    function keypresspacienteprot(e) {
+        if (e.which == 13) {
+            findPacienteProtocol();
+        }
+    }
+
+    function getProtocolos(id) {
+        $("#divesperapaciente").html('Procesando datos, espere ...');
+        $("#lista").html('');
+        var url = '/AnalisisResultados/searchProtocolo/' + id;        
+        $.get(url, function (result) {
+            $("#lista").html(result);
+            $("#divesperapaciente").html('');
+        });
+    }
+</script>

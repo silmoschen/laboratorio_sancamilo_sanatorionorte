@@ -1,0 +1,68 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.utiles.PaginadorGenerico<laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudes>
+<div class="row">
+    <div class="col-sm-12">
+        @{
+            if (Model.Resultado != null)
+            {
+                <h3>Paciente: @Model.Resultado[0].paciente.nombre - Nro. Doc.: @Model.Resultado[0].paciente.nrodoc</h3>
+            }
+        }
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Fecha
+            </th>
+            <th>
+                Protocolo
+            </th>
+            <th>
+                Obra Social
+            </th>
+            <th>
+                Profesional
+            </th>
+            <th>
+                Resultado
+            </th>
+        </tr>
+    </thead>
+    @{
+        if (Model.Resultado != null)
+        {
+            foreach (var c in Model.Resultado) // Print the list
+            {
+
+                {
+                    <tr>
+                        <td valign="top">
+                            @c.fecha1
+                        </td>
+                        <td valign="top">
+                            @c.nrosolicitud
+                        </td>
+                        <td valign="top" width="20%">
+                            @c.obrasocial.nombre
+                        </td>
+                        <td valign="top">
+                            @if (c.profesional != null)
+                            {
+                                @c.profesional.nombre
+                            }
+                        </td>
+                        <td valign="top">
+                            <a href="javascript:onclick(loadResult('@c.nrosolicitud'))" class="btn btn-success" style="color:white">
+                                Ver
+                            </a>
+                            (+) @c.archivosAdjuntos.Count
+                        </td>
+                    </tr>
+                }
+
+            }
+        }
+    }
+</table>

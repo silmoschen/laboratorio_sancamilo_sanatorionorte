@@ -1,0 +1,59 @@
+﻿@model laboratoriobioquimico.Models.ModelEstadistica
+@using (Html.BeginForm("Generar", "Estadisticas", FormMethod.Post, new { enctype = "form" }))
+{
+    <fieldset>
+        <legend>Estadísticas</legend>
+        <div class="row">
+            <div class="col-sm-12">
+                <label class="switch">
+                    <input name="tipo" id="tipo" type="checkbox" checked="@Model.tipo" value="true" data-val="true" data-bind="checked: IsEnabled" onchange="MyFunction(1);" />
+                    <div class="slider round"></div>
+                </label>
+                Ambutatorio / Internación
+                <p/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Desde
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.desde, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
+                <p />
+            </div>
+            <div class="col-sm-2">
+                Hasta
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.hasta, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
+                <p />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Estadística
+            </div>
+            <div class="col-sm-4">
+                @Html.DropDownList("reporte", ViewData["reportes"] as List<SelectListItem>, new { @class = "form-control" })
+                <p />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Gráfico
+            </div>
+            <div class="col-sm-4">
+                @Html.DropDownList("tiporeporte", ViewData["tiporeportes"] as List<SelectListItem>, new { @class = "form-control" })
+                <p />
+            </div>
+        </div>
+
+        <p>
+            <input type="submit" value="Generar" class="btn btn-success" />
+        </p>
+    </fieldset>
+}
+<div class="text-danger">
+    @ViewBag.error
+</div>

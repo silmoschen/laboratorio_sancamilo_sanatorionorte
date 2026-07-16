@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="ObrasSocialesInternacion" table="obrassociales_internacion" dynamic-update="true">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <id name="codos" column ="codos" type="string" unsaved-value="0">
+      <generator class="assigned"/>
+    </id>
+    
+    <property name="nombre" column="nombre" not-null="false" type="string"/>
+
+  </class>
+
+</hibernate-mapping>

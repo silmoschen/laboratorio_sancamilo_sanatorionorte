@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Sanatorio Reconquista";
+}
+
+<div class="jumbotron">
+    <h1>ANALISIS CLINICOS</h1>
+    <p class="lead">Análisis Clínicos Pacientes</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Internaciones</h2>
+        <p>
+            Acceso a Protocolos Pacientes Internados
+        </p>
+        <p><a class="btn btn-default" href="/AnalisisResultadosInternacion">Ir a &raquo;</a></p>
+    </div>    
+    <div class="col-md-4">
+        <h2>Ambulatorio</h2>
+        <p>Acceso a Protocolos Pacientes Ambulatorio</p>
+        <p><a class="btn btn-default" href="/AnalisisResultados">Ir a &raquo;</a></p>
+    </div>    
+    @{
+        if (@Session["Rol"] != null)
+        {
+            if (@Session["Rol"].ToString().Equals("1"))
+            {
+                <div class="col-md-4">
+                    <h2>Estadísticas</h2>
+                    <p>Gráficos Estadísticos</p>
+                    <p><a class="btn btn-default" href="/Estadisticas">Ir a &raquo;</a></p>
+                </div>
+
+            }
+        }
+    }
+</div>

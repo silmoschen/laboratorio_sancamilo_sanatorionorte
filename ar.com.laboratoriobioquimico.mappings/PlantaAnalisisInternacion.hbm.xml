@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="PlantaAnalisisInternacion" table="plantaanalisis_internacion" dynamic-update="true">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <composite-id name="ID" class="PlantaAnalisisInternacionPK">
+      <key-property name="codigo" column="codigo" type="string"/>
+      <key-property name="items" column="items" type="string"/>
+    </composite-id>
+    
+    <property name="elemento" column="elemento" type="string"/>
+    <property name="valoresn" column="valoresn" type="string"/>
+    <property name="resultado" column="resultado" type="string"/>
+    <property name="imputable" column="imputable" type="string"/>
+    <property name="distancia" column="distancia" type="string"/>
+    <property name="itemsparalelo" column="itemsparalelo" type="string"/>
+    <property name="formula" column="formula" type="string"/>
+    <property name="observaciones" column="observaciones" type="string"/>    
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+﻿@{
+    var lista = (List<laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.PacientesInternacion>)ViewData["pacientesresult"];
+
+    if (@lista != null)
+    {
+        <table class="table">
+            @foreach (var c in @lista)
+            {
+            <tr>
+                <td valign="top" width="40%">
+                    @c.nombre
+                </td>
+                <td valign="top">
+                    @c.nrodoc
+                </td>
+                <td valign="top">
+                    @c.codpac
+                </td>
+                <td valign="top">
+                    <input type="button" value="S" onclick="getProtocolos('@c.codpac')" class="btn btn-success" />
+                </td>
+            </tr>
+            }
+        </table>
+    }
+}

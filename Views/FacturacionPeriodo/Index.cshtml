@@ -1,0 +1,64 @@
+﻿@model laboratoriobioquimico.Models.ModelEstadistica
+
+<div class="row">
+    <div class="col-sm-2">
+        Período
+    </div>
+    <div class="col-sm-4">
+        @Html.DropDownList("periodo", ViewData["periodos"] as List<SelectListItem>, new { @class = "form-control" })
+        <p />
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="col-sm-2">
+        <input type="button" class="btn btn-success" value="Generar Reporte" onclick="report()" />
+    </div>
+    <div class="col-sm-2">        
+        <input type="button" class="btn btn-primary" value="Exportar a Excel" onclick="excel()" />
+    </div>
+
+</div>
+
+<div class="text-danger">
+    @ViewBag.error
+</div>
+
+<script type="text/javascript">
+
+    function report() {
+        var url = '/FacturacionPeriodo/report/';
+        var periodo = document.getElementById('periodo').value;
+
+        $.post(url,
+            {
+                periodo: periodo
+            },
+            function (data, status) {
+                if (status == 'success') {
+                    window.location = 'FacturacionPeriodo/Preview';
+                } else {
+                    alert('Se ha producido un Error');
+                }
+            });
+    }
+
+    function excel() {
+        var url = '/FacturacionPeriodo/report/';
+        var periodo = document.getElementById('periodo').value;
+
+        $.post(url,
+            {
+                periodo: periodo
+            },
+            function (data, status) {
+                if (status == 'success') {
+                    window.location = 'FacturacionPeriodo/Excel';
+                } else {
+                    alert('Se ha producido un Error');
+                }
+            });
+    }
+
+
+</script>

@@ -1,0 +1,189 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudesInternacionItems
+<div class="row">
+    <div class="col-sm-1">
+        Prot/Id
+    </div>
+    <div class="col-sm-2">
+        <b>
+            @Html.DisplayFor(model => model.solicitud.nrosolicitud)
+        </b>
+        <p />
+    </div>
+    <div class="col-sm-1">
+        Paciente
+    </div>
+    <div class="col-sm-4">
+        <b>
+            @Html.DisplayFor(model => model.solicitud.paciente.nombre)
+        </b>
+        <p />
+    </div>
+    <div class="col-sm-1">
+        Fecha
+    </div>
+    <div class="col-sm-3">
+        <b>
+            @Model.solicitud.fecha1
+        </b>
+        <p />
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-1">
+        O.Social
+    </div>
+    <div class="col-sm-2">
+        <b>
+            @Html.DisplayFor(model => model.solicitud.obrasocial.nombre)
+        </b>
+        <p />
+    </div>
+    <div class="col-sm-1">
+        Médico
+    </div>
+    <div class="col-sm-3">
+        <b>
+            @Html.DisplayFor(model => model.solicitud.profesional.nombre)
+        </b>
+        <p />
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-4">
+        <b></b>
+        <p />
+    </div>
+</div>
+@using (Html.BeginForm("Save", "AnalisisResultadosInternacion", FormMethod.Post, new { enctype = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-sm-6">
+            <h4>
+                Práctica: @Model.determinacion
+            </h4>
+        </div>
+        <div class="col-sm-2">
+            <br />
+            <input type="button" value="Iniciar Items" class="btn btn-danger" onclick="resetItems('@Model.solicitud.nrosolicitud', '@Model.ID.items')" />
+        </div>
+        <div class="col-sm-4">
+            <br />
+            <input type="submit" value="Guardar Resultado" class="btn btn-success" />
+            <input type="button" value="Retornar" class="btn btn-default" onclick="location.href='@Url.Action("loadProtocol/" + Model.solicitud.nrosolicitud, "AnalisisResultadosInternacion")'" />
+        </div>
+    </div>
+
+    <hr />
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Items
+                </th>
+                <th>
+                    Resultado
+                </th>
+                <th>
+                    Valor Resultado
+                </th>
+                <th>
+                    Valores Normales
+                </th>
+                <th>
+                    Obs.Item
+                </th>
+            </tr>
+        </thead>
+        @Html.HiddenFor(model => model.ID.nrosolicitud)
+        @Html.HiddenFor(model => model.codigo)
+        @{
+
+            for (int i = 0; i < Model.resultadoitem.Count; i++)
+            {
+                @Html.HiddenFor(model => model.resultadoitem[i].ID.items)
+                @Html.HiddenFor(model => model.resultadoitem[i].plantilla.imputable)
+
+                <tr>
+                    <td valign="top">
+                        @Model.resultadoitem[i].ID.items
+                    </td>
+                    <td valign="top">
+                        @Model.resultadoitem[i].plantilla.elemento
+                    </td>
+                    <td valign="top" width="40%">
+                        @if (@Model.resultadoitem[i].plantilla.imputable.Equals("S"))
+                        {
+
+                            @Html.TextBoxFor(model => @Model.resultadoitem[i].resultado)
+
+                        }
+                    </td>
+                    <td valign="top">
+                        @Model.resultadoitem[i].plantilla.valoresn
+                    </td>
+                    <td valign="top">
+                        @if (Model.cargado != null)
+                        {
+                            @Html.ActionLink("Cargar", "ObservacionResultItem", "AnalisisResultadosInternacion", new { id = @Model.resultadoitem[i].solicituditem.solicitud.nrosolicitud, p2 = @Model.resultadoitem[i].ID.codigo, p3 = @Model.resultadoitem[i].ID.items }, new { @class = "btn btn-info", @style = "color:white" })
+                        }
+                    </td>
+                </tr>
+
+                @Html.HiddenFor(model => model.resultadoitem[i].ID.nrosolicitud)
+                @Html.HiddenFor(model => model.resultadoitem[i].ID.items)
+
+            }
+        }
+    </table>
+
+
+
+}
+<div class="text-danger">
+    @ViewBag.error
+</div>
+<script type="text/javascript">
+    function resetItems(protocol, item) {
+        if (confirm('Seguro para Items ?. Esta Opción Eliminará los Resultados Actuales')) {
+            var url = '/AnalisisResultadosInternacion/ResetItem/' + protocol + '/' + item;
+            window.location.href = url;
+        }
+    }
+
+    $('input').keypress(function (e) {
+        if (e.which == 13) {
+            var s = $(this).attr('name');
+
+            var r = 0;
+            if (r.lenght == 26)
+                r = s.substring(14, 15)
+            else
+                r = s.substring(14, 16);
+
+            r = parseInt(r) + 1;
+            var xx = parseInt(r);
+            var f = '';
+            f = 'resultadoitem_' + r + '__resultado';
+            p = 'resultadoitem_' + xx + '__plantilla_imputable';
+
+            e.preventDefault();
+
+            var m = document.getElementById(p).value;
+
+            if (m == 'N') {
+                r = parseInt(r) + 1;
+                var f = '';
+                f = 'resultadoitem_' + r + '__resultado';
+            }
+
+            var x = document.getElementById(f).value;
+
+            document.getElementById(f).focus();
+        }
+    });
+
+</script>

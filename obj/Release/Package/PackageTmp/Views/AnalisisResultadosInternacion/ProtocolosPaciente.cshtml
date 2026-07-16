@@ -1,0 +1,49 @@
+﻿<table class="table">
+    @{
+        var lista = (List<laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudesInternacion>)ViewData["protocolospaciente"];
+
+        if (@lista != null)
+        {
+
+            foreach (var c in @lista) // Print the list
+            {
+                <tr>
+                    <td valign="top">
+                        @c.fecha1
+                    </td>
+                    <td valign="top">
+                        @c.nrosolicitud
+                    </td>
+                    <td valign="top" width="25%">
+                        @c.paciente.nombre
+                    </td>
+                    <td valign="top" width="25%">
+                        @if (c.obrasocial != null)
+                        {
+                          @c.obrasocial.nombre
+                        }
+
+                    </td>
+
+                    <td valign="top">
+                        @{
+                            if (!@Session["Rol"].ToString().Equals("2"))
+                            {
+                                @Html.ActionLink("Cargar", "loadProtocol", "AnalisisResultadosInternacion", new { id = @c.nrosolicitud }, new { @class = "btn btn-success", @style = "color:white" })
+                            }
+                            else
+                            {
+                                @Html.ActionLink("Resultado", "PrintResult2", "AnalisisResultadosInternacion", new { id = @c.nrosolicitud }, new { @class = "btn btn-primary", @style = "color:white" })
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+
+        }
+    }
+</table>
+<p />
+<div class="text-danger">
+    @ViewBag.error
+</div>

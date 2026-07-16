@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="Parametros" table="parametros1">
+
+    <cache usage="read-write" region="LongTerm" />
+
+    <id name="Id" column ="ID" type="int">
+      <generator class="assigned"/>
+    </id>
+
+    <property name="Parametro1" column="parametro1" type="string"/>
+    <property name="Parametro2" column="parametro2" type="string"/>
+    <property name="Parametro3" column="parametro3" type="string"/>
+    <property name="Parametro4" column="parametro4" type="string"/>
+    <property name="Parametro5" column="parametro5" type="string"/>
+    <property name="Parametro6" column="parametro6" type="string"/>
+    <property name="Parametro7" column="parametro7" type="string"/>
+    <property name="Parametro8" column="parametro8" type="string"/>
+    <property name="Parametro9" column="parametro9" type="string"/>
+    <property name="Parametro10" column="parametro10" type="string"/>
+    <property name="Parametro11" column="parametro11" type="string"/>
+    <property name="Texto1" column="texto1" lazy="true" type="string"/>
+    <property name="Texto2" column="texto2" lazy="true" type="string"/>
+    <property name="Texto3" column="texto3" lazy="true" type="string"/>
+    <property name="Texto4" column="texto4" lazy="true" type="string"/>
+    <property name="Texto5" column="texto5" lazy="true" type="string"/>
+    <property name="Texto6" column="texto6" lazy="true" type="string"/>
+    <property name="Texto7" column="texto7" lazy="true" type="string"/>
+    <property name="Texto8" column="texto8" lazy="true" type="string"/>
+    <property name="Texto9" column="texto9" lazy="true" type="string"/>
+    <property name="Texto10" column="texto10" lazy="true" type="string"/>    
+    <property name="Titulo1" column="titulo1" type="string"/>
+    <property name="Titulo2" column="titulo2" type="string"/>
+    <property name="Titulo3" column="titulo3" type="string"/>
+    <property name="Titulo4" column="titulo4" type="string"/>
+    <property name="Titulo5" column="titulo5" type="string"/>
+    <property name="Titulo6" column="titulo6" type="string"/>
+    <property name="Titulo7" column="titulo7" type="string"/>
+    <property name="Titulo8" column="titulo8" type="string"/>
+    <property name="Titulo9" column="titulo9" type="string"/>
+    <property name="Titulo10" column="titulo10" type="string"/>
+    
+  </class>
+
+</hibernate-mapping>

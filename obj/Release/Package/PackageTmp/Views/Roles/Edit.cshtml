@@ -1,0 +1,33 @@
+﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.Roles
+@using (Html.BeginForm("Save", "Roles", FormMethod.Post, new { enctype = "form" }))
+{   
+    <fieldset>
+        <legend>Roles</legend>
+        @Html.HiddenFor(model => model.Id)
+        <div class="row">
+            <div class="col-sm-2">
+                Rol
+            </div>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Descrip, new { @class = "form-control", @placeholder = "Descripción del Rol" })
+                <p />                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                Nivel
+            </div>
+            <div class="col-sm-10">
+                @Html.DropDownList("Nivel", ViewData["niveles"] as List<SelectListItem>, new { @class = "form-control" })
+                <p />
+            </div>
+        </div>
+        <p>
+            <input type="submit" value="Guardar" class="btn btn-success" />
+            <input type="button" value="Cancelar" class="btn btn-default" onclick="location.href='@Url.Action("Index", "Roles")'" />
+        </p>
+    </fieldset>
+}
+<div class="text-danger">
+    @ViewBag.error
+</div>
