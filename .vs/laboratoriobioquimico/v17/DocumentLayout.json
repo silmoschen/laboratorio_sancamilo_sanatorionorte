@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\controllers\\estadisticasreportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:controllers\\estadisticasreportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\controllers\\estadisticascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:controllers\\estadisticascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\views\\estadisticasreportes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\estadisticasreportes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\views\\estadisticas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\estadisticas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,60 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EstadisticasReportesController.cs",
-              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\EstadisticasReportesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EstadisticasReportesController.cs",
-              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\EstadisticasReportesController.cs",
-              "RelativeToolTip": "Controllers\\EstadisticasReportesController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAowFsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T18:27:22.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EstadisticasController.cs",
-              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\EstadisticasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EstadisticasController.cs",
-              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\EstadisticasController.cs",
-              "RelativeToolTip": "Controllers\\EstadisticasController.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAmwIsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T18:26:39.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\EstadisticasReportes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\EstadisticasReportes\\Index.cshtml",
-              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\EstadisticasReportes\\Index.cshtml",
-              "RelativeToolTip": "Views\\EstadisticasReportes\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-16T18:25:50.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\Estadisticas\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Estadisticas\\Index.cshtml",
-              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\Estadisticas\\Index.cshtml",
-              "RelativeToolTip": "Views\\Estadisticas\\Index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-16T18:25:29.867Z"
             }
           ]
         }

@@ -12,8 +12,9 @@
                     <div class="col-sm-5">
                         @using (Html.BeginForm("Upload", "AnalisisResultados", FormMethod.Post, new { enctype = "multipart/form-data" }))
                         {
+                            @Html.AntiForgeryToken()
                             <input type="file" name="files" value="Seleccionar" accept=".pdf" multiple="multiple" />
-                            <br/>
+                            <br />
                             <input type="submit" value="Adjuntar Archivo(s)" class="btn btn-success" />
                         }
                     </div>

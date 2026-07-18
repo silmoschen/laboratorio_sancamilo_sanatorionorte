@@ -3,6 +3,54 @@
   "WorkspaceRootPath": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\sendmail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\sendmail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\searchpacientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\searchpacientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\searchfechas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\searchfechas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\resultitemobservacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\resultitemobservacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\protocolospaciente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\protocolospaciente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\previewresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\previewresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\pacientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\pacientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\listfile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\listfile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\addfilesprotocol.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\addfilesprotocol.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\addfiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\addfiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\controllers\\estadisticasreportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:controllers\\estadisticasreportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,6 +83,162 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SendMail.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\SendMail.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\SendMail.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\SendMail.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\SendMail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:53.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SearchPacientes.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\SearchPacientes.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\SearchPacientes.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\SearchPacientes.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\SearchPacientes.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:51.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SearchFechas.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\SearchFechas.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\SearchFechas.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\SearchFechas.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\SearchFechas.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:47.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResultItemObservacion.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\ResultItemObservacion.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\ResultItemObservacion.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\ResultItemObservacion.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\ResultItemObservacion.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:43.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\Result.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\Result.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\Result.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\Result.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:38.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProtocolosPaciente.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\ProtocolosPaciente.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\ProtocolosPaciente.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\ProtocolosPaciente.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\ProtocolosPaciente.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:35.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PreviewResult.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\PreviewResult.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\PreviewResult.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\PreviewResult.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\PreviewResult.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:34.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Pacientes.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\Pacientes.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\Pacientes.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\Pacientes.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\Pacientes.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:31.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListFile.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\ListFile.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\ListFile.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\ListFile.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\ListFile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:29.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\Index.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\Index.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:26.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "addFilesProtocol.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\addFilesProtocol.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\addFilesProtocol.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\addFilesProtocol.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\addFilesProtocol.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:18:24.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "addFiles.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\addFiles.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\addFiles.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\addFiles.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\addFiles.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-18T14:17:50.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "EstadisticasReportesController.cs",
               "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\EstadisticasReportesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EstadisticasReportesController.cs",
@@ -47,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "EstadisticasController.cs",
               "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\EstadisticasController.cs",
               "RelativeDocumentMoniker": "Controllers\\EstadisticasController.cs",
@@ -59,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\EstadisticasReportes\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\EstadisticasReportes\\Index.cshtml",
@@ -71,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\Estadisticas\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Estadisticas\\Index.cshtml",
