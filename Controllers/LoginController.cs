@@ -36,7 +36,6 @@ namespace laboratoriobioquimico.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        [ValidateAntiForgeryToken]
         public ActionResult Login(Users pojo)
         {
             entity = entityService.getUser(pojo.Usuario, pojo.Pass);

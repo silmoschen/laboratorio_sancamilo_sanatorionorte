@@ -1,7 +1,6 @@
 ﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.Users
 @using (Html.BeginForm("Save", "Users", FormMethod.Post, new { enctype = "form" }))
 {
-    @Html.AntiForgeryToken()
     <fieldset>
         <legend>Usuario</legend>
         @Html.HiddenFor(model => model.Id)
@@ -62,7 +61,7 @@
         <br />
         <p>
             <input type="submit" value="Guardar" class="btn btn-success" />
-            <input type="button" value="Cancelar" class="btn btn-default" onclick="location.href='@Url.Action("Index", "Users")'" />
+            <input type="button" value="Cancelar" class="btn btn-secondary" onclick="location.href='@Url.Action("Index", "Users")'" />
         </p>
     </fieldset>
 }

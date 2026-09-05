@@ -1,19 +1,17 @@
-﻿<!-- Popup Paciente -->
-<div id="addFilesModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+﻿<!-- Popup Archivos -->
+<div id="addFilesModal" class="modal fade" tabindex="-1" aria-labelledby="addFilesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    ×
-                </button>
-
+                <h5 class="modal-title" id="addFilesModalLabel">Adjuntar archivos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-5">
                         @using (Html.BeginForm("Upload", "AnalisisResultados", FormMethod.Post, new { enctype = "multipart/form-data" }))
                         {
-                            @Html.AntiForgeryToken()
-                            <input type="file" name="files" value="Seleccionar" accept=".pdf" multiple="multiple" />
+                            <input type="file" name="files" value="Seleccionar" accept=".pdf" multiple="multiple" class="form-control" />
                             <br />
                             <input type="submit" value="Adjuntar Archivo(s)" class="btn btn-success" />
                         }
@@ -26,7 +24,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

@@ -44,6 +44,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.entities
         public string codos { get; set; }
         public string codpac { get; set; }
         public string idprof { get; set; }
+        public bool dcm4che { get; set; }
 
         public IList<AnalisisSolicitudesInternacionSendResults> logs;
         public IList<AttachFilesInternacion> archivosAdjuntos { get; set; }

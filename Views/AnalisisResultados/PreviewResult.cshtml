@@ -4,10 +4,10 @@
 @{
     if (!@Session["Rol"].ToString().Equals("2"))
     {
-        <input type="button" value="Finalizar" class="btn btn-default" onclick="location.href='@Url.Action("returnProtocol", "AnalisisResultados")'" />
+        <input type="button" value="Finalizar" class="btn btn-secondary" onclick="location.href='@Url.Action("returnProtocol", "AnalisisResultados")'" />
     }
     else
     {
-        <input type="button" value="Finalizar" class="btn btn-default" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultados")'" />
+        <input type="button" value="Finalizar" class="btn btn-secondary" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultados")'" />
     }
 }

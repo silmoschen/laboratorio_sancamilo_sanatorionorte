@@ -21,7 +21,6 @@ namespace laboratoriobioquimico.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public string verify(Users pojo)
         {
 
@@ -39,7 +38,6 @@ namespace laboratoriobioquimico.Controllers
 
         [HttpPost]
         [UpdateFilter]
-        [ValidateAntiForgeryToken]
         public string change(Users pojo)
         {
 

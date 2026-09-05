@@ -19,12 +19,14 @@ namespace laboratoriobioquimico
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+            // Bundle (no ScriptBundle/StyleBundle): WebGrease rompe el JS ES6 y las CSS variables de Bootstrap 5.
+            bundles.Add(new Bundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/bootstrap.bundle.min.js",
+                      "~/Scripts/bootstrap-jquery-bridge.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            bundles.Add(new Bundle("~/Content/css").Include(
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/Site.css"));
         }
     }
 }

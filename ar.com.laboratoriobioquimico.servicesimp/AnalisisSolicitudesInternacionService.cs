@@ -12,6 +12,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
         private IAnalisisSolicitudesInternacionSendResultsDao sendmailDao { get; set; }
         private INbuinosInternacionDao nbuinosDao { get; set; }
         private IPacientesInternacionDao pacienteDao { get; set; }
+        private IParametrosDao parametroDao { get; set; }
 
         private string rutaSincro = "";
 
@@ -41,7 +42,13 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
         }
         public IList<AnalisisSolicitudesInternacion> getAll(int? pageNumber, int? pageSize, IList<string> orderByDesc)
         {
-            return entityDao.getAll(pageNumber, pageSize, null, null, null, orderByDesc);
+            Parametros p = parametroDao.get(1);
+
+            var l = entityDao.getAll(pageNumber, pageSize, null, null, null, orderByDesc);
+
+            foreach (var o in l) o.dcm4che = p.Opt1;
+
+            return l;
         }
 
         public long getMaxPage(int pageSize)

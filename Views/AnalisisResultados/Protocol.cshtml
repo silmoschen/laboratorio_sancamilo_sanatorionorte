@@ -1,7 +1,6 @@
 ﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudes
 @using (Html.BeginForm("PrintResult", "AnalisisResultados", FormMethod.Post, new { enctype = "form" }))
 {
-    @Html.AntiForgeryToken()
     <div class="row">
         <div class="col-sm-1">
             Prot/Id
@@ -70,9 +69,9 @@
             @if (@lista != null)
             {
                 <br />
-                <input type="button" value="Adjuntar Archivo(s)" class="btn btn-info" onclick="adjuntarArchivos()" />
+                <input type="button" value="Adjuntar Archivo(s)" class="btn btn-info" style = "color:white" onclick="adjuntarArchivos()" />
                 <input type="submit" value="Generar Resultado" class="btn btn-success" />
-                <input type="button" value="Retornar" class="btn btn-default" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultados")'" />
+                <input type="button" value="Retornar" class="btn btn-secondary" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultados")'" />
             }
 
         </div>

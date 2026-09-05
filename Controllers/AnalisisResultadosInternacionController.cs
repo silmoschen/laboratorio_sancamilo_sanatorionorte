@@ -160,7 +160,6 @@ namespace laboratoriobioquimico.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Save(AnalisisSolicitudesInternacionItems list)
         {
 
@@ -247,7 +246,6 @@ namespace laboratoriobioquimico.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult SaveObservacionResultItem(AnalisisSolicitudesInternacionItemsResultado pojo)
         {
 
@@ -335,7 +333,6 @@ namespace laboratoriobioquimico.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult PrintResult(AnalisisSolicitudesInternacion pojo)
         {
             Session["__idprotocol"] = pojo.nrosolicitud;
@@ -424,7 +421,6 @@ namespace laboratoriobioquimico.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult SendMailTo(AnalisisSolicitudesInternacion pojo)
         {
             string estado = "";
@@ -508,7 +504,6 @@ namespace laboratoriobioquimico.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Upload(HttpPostedFileBase[] files)
         {
             // Borramos archivos previos

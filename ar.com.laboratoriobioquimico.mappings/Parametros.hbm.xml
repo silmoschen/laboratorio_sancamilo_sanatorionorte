@@ -40,6 +40,8 @@
     <property name="Titulo8" column="titulo8" type="string"/>
     <property name="Titulo9" column="titulo9" type="string"/>
     <property name="Titulo10" column="titulo10" type="string"/>
+    <property name="Opt1" column="opt1" type="boolean"/>
+    <property name="Opt2" column="opt2" type="boolean"/>
     
   </class>
 

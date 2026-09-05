@@ -1,43 +1,33 @@
 ﻿<!-- Popup Fechas -->
-<div id="searchFechaModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+<div id="searchFechaModal" class="modal fade" tabindex="-1" aria-labelledby="searchFechaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    ×
-                </button>
-                <h2>
-                    Buscar Protocolo
-                </h2>
-                <div class="row">
+                <h5 class="modal-title" id="searchFechaModalLabel">Buscar Protocolo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3 align-items-center">
                     <div class="col-sm-1">
                         Desde
                     </div>
                     <div class="col-sm-3">
-                        <input type="date" id="txtdesde" />
-                        <p />
+                        <input type="date" id="txtdesde" class="form-control" />
                     </div>
                     <div class="col-sm-1">
                         Hasta
                     </div>
                     <div class="col-sm-3">
-                        <input type="date" id="txthasta" />
-                        <p />
+                        <input type="date" id="txthasta" class="form-control" />
                     </div>
-
                     <div class="col-sm-2">
                         <input type="button" class="btn btn-success" value="Buscar" onclick="searchProtocolFecha()" />
                     </div>
-
                     <div class="col-sm-2">
                         <div id="divespera">
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-12" id="listafechas" style="height: 400px; overflow: auto;">
                         @Html.Partial("Protocolospaciente")

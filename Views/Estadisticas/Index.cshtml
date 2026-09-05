@@ -1,7 +1,6 @@
 ﻿@model laboratoriobioquimico.Models.ModelEstadistica
 @using (Html.BeginForm("Generar", "Estadisticas", FormMethod.Post, new { enctype = "form" }))
 {
-    @Html.AntiForgeryToken()
     <fieldset>
         <legend>Estadísticas</legend>
         <div class="row">

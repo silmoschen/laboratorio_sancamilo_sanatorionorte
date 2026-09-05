@@ -22,7 +22,6 @@ namespace laboratoriobioquimico.Controllers
 
         [HttpPost]
         [UpdateFilter]
-        [ValidateAntiForgeryToken]
         public ActionResult Save(Parametros pojo)
         {
             try

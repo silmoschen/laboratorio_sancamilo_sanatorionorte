@@ -5,44 +5,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio Análisis Clinicos</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
-    <script src="~/Scripts/toggle.js" type="text/javascript"></script>
-    <script src="~/Scripts/bootstrap.min.js" type="text/javascript"></script>
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/toggle.css" rel="stylesheet" />
-
+    <script src="~/Scripts/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap-jquery-bridge.js" type="text/javascript"></script>
     <script src="~/Scripts/ChartJS/Chart.min.js"></script>
     <script src="~/Scripts/ChartJS/utils.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--
-                    <a href='@Url.Action("Index", "Home")'>
-                    <img src='@Url.Content("~/Content/logo.jpg")' width='60px' />
-                    </a>
-                -->
-                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Protocolos
-                            <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>@Html.ActionLink("Resultados de Análisis Internación", "Index", "AnalisisResultadosInternacion")</li>
-                            <li>@Html.ActionLink("Resultados de Análisis Ambulatorio", "Index", "AnalisisResultados")</li>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Resultados de Análisis Internación", "Index", "AnalisisResultadosInternacion", null, new { @class = "dropdown-item" })</li>
+                            <li>@Html.ActionLink("Resultados de Análisis Ambulatorio", "Index", "AnalisisResultados", null, new { @class = "dropdown-item" })</li>
                         </ul>
                     </li>
                     @{
@@ -50,28 +37,26 @@
                         {
                             if (@Session["Rol"].ToString().Equals("1"))
                             {
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Estadísticas
-                                        <span class="caret"></span>
                                     </a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li>@Html.ActionLink("Reportes Estadísticos", "Index", "EstadisticasReportes")</li>
-                                        <li>@Html.ActionLink("Gráficos estadísticos", "Index", "Estadisticas")</li>
+                                    <ul class="dropdown-menu">
+                                        <li>@Html.ActionLink("Reportes Estadísticos", "Index", "EstadisticasReportes", null, new { @class = "dropdown-item" })</li>
+                                        <li>@Html.ActionLink("Gráficos estadísticos", "Index", "Estadisticas", null, new { @class = "dropdown-item" })</li>
                                     </ul>
                                 </li>
 
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         General
-                                        <span class="caret"></span>
                                     </a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a class="" href="/Users"><span class="fa fa-arrow-right">&nbsp;</span> Usuarios </a></li>
-                                        <li><a class="" href="/Roles"><span class="fa fa-arrow-right">&nbsp;</span> Roles Usuarios </a></li>
-                                        <li><a class="" href="/Logs"><span class="fa fa-arrow-right">&nbsp;</span> Log Usuarios </a></li>
-                                        <li><a class="" href="/CambiarClave"><span class="fa fa-arrow-right">&nbsp;</span> Cambiar Contraseña </a></li>
-                                        <li><a class="" href="/Parametros"><span class="fa fa-arrow-right">&nbsp;</span> Parámetros Generales </a></li>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/Users">Usuarios</a></li>
+                                        <li><a class="dropdown-item" href="/Roles">Roles Usuarios</a></li>
+                                        <li><a class="dropdown-item" href="/Logs">Log Usuarios</a></li>
+                                        <li><a class="dropdown-item" href="/CambiarClave">Cambiar Contraseña</a></li>
+                                        <li><a class="dropdown-item" href="/Parametros">Parámetros Generales</a></li>
                                     </ul>
                                 </li>
                             }
@@ -82,27 +67,23 @@
                         {
                             if (@Session["Rol"].ToString().Equals("2"))
                             {
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         General
-                                        <span class="caret"></span>
                                     </a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a class="" href="/CambiarClaveLab"><span class="fa fa-arrow-right">&nbsp;</span> Cambiar Contraseña </a></li>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/CambiarClaveLab">Cambiar Contraseña</a></li>
                                     </ul>
                                 </li>
                             }
                         }
                     }
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li><a href="/Login">[cerrar session] us.: @Session["__useramam"]</i></a></li>
+                    <li class="nav-item">@Html.ActionLink("Acerca de", "About", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item"><a class="nav-link" href="/Login">[cerrar session] us.: @Session["__useramam"]</a></li>
                 </ul>
             </div>
         </div>
-    </div>
-    <br />
-    <br />
-    <br />
+    </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -120,15 +101,10 @@
     }
 </script>
 <script type="text/javascript">
-    var inputs = $('input, textarea, select, checkbox').not(':input[type=button], :input[type=submit], :input[type=reset], :input[type=checkbox]');
+    var inputs = $('input, textarea, select').not(':input[type=button], :input[type=submit], :input[type=reset], :input[type=checkbox], :input[type=radio], :input[type=file], :input[type=hidden], :input[type=image], :input[type=range], :input[type=color]');
     inputs.addClass('form-control');
 </script>
 <script type="text/javascript">
-    function __num(n) {
-        var r = n.replace('.', ',');
-        return r;
-    }
-
     function PadLeft(value, length) {
         return (value.toString().length < length) ? PadLeft("0" + value, length) :
             value;

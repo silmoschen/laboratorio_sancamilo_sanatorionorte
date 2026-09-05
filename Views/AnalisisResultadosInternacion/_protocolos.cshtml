@@ -73,13 +73,13 @@
                         if (@Session["Rol"].ToString().Equals("2"))
                         {
                             <a href="javascript:onclick(loadResult('@c.nrosolicitud'))" class="btn btn-warning" style="color:white">
-                                Resultado
+                                R
                             </a>
                         }
                         else
                         {
                             <a href="javascript:onclick(loadProtocol('@c.nrosolicitud'))" class="btn btn-info" style="color:white">
-                                Cargar
+                                C
                             </a>
                         }
                     }
@@ -88,6 +88,14 @@
                 <a href="javascript:onclick(sendProtocol(`@c.nrosolicitud`))" class="btn btn-warning" style="color:white">
                     @@
                 </a>
+
+                @if (c.dcm4che)
+                {
+                    <a href="javascript:onclick(senddcm4che(`@c.nrosolicitud`))" class="btn btn-success" style="color:white">
+                        D
+                    </a>
+                }
+
             </td>
         </tr>
                 }

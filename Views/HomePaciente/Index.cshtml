@@ -8,45 +8,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio Análisis Clinicos</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
-    <script src="~/Scripts/toggle.js" type="text/javascript"></script>
-    <script src="~/Scripts/bootstrap.min.js" type="text/javascript"></script>
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/toggle.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap-jquery-bridge.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-            
-                <div class="row">
-                    <div class="col-sm-6">
-                        <br/>
-                        <div style="color: white">
-                            <b>Resultados Encontrados para este Paciente</b>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li><a href="/Login">[cerrar session] us.: @Session["__useramam"]</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
+            <span class="navbar-brand">Resultados Encontrados para este Paciente</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPaciente" aria-controls="navbarPaciente" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPaciente">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Login">[cerrar session] us.: @Session["__useramam"]</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
     <div class="container body-content">
         <div class="row">
@@ -96,35 +80,35 @@
             @if (Model.PaginaActual > 1)
             {
                 @Html.ActionLink("<<", "Index", new { pagina = 1 },
-                                new { @class = "btn btn-sm btn-default" })
+                                new { @class = "btn btn-sm btn-secondary" })
                 <span></span>
                 @Html.ActionLink("Anterior", "Index", new { pagina = Model.PaginaActual - 1 },
-                                new { @class = "btn btn-sm btn-default" })
+                                new { @class = "btn btn-sm btn-secondary" })
             }
             else
             {
                 @Html.ActionLink("<<", "Index", new { pagina = 1 },
-                                new { @class = "btn btn-sm btn-default disabled" })
+                                new { @class = "btn btn-sm btn-secondary disabled" })
                 <span></span>
                 @Html.ActionLink("Anterior", "Index", new { pagina = 1 },
-                                new { @class = "btn btn-sm btn-default disabled" })
+                                new { @class = "btn btn-sm btn-secondary disabled" })
             }
             <span></span>
             @if (Model.PaginaActual < Model.TotalPaginas)
             {
                 @Html.ActionLink("Siguiente", "Index", new { pagina = Model.PaginaActual + 1 },
-                                new { @class = "btn btn-sm btn-default" })
+                                new { @class = "btn btn-sm btn-secondary" })
                 <span></span>
                 @Html.ActionLink(">>", "Index", new { pagina = Model.TotalPaginas },
-                                new { @class = "btn btn-sm btn-default" })
+                                new { @class = "btn btn-sm btn-secondary" })
             }
             else
             {
                 @Html.ActionLink("Siguiente", "Index", new { pagina = Model.TotalPaginas - 1 },
-                                new { @class = "btn btn-sm btn-default disabled" })
+                                new { @class = "btn btn-sm btn-secondary disabled" })
                 <span></span>
                 @Html.ActionLink(">>", "Index", new { pagina = Model.TotalPaginas },
-                                new { @class = "btn btn-sm btn-default disabled" })
+                                new { @class = "btn btn-sm btn-secondary disabled" })
             }
         </div>
 

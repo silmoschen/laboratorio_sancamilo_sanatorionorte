@@ -71,7 +71,6 @@
 <hr />
 @using (Html.BeginForm("SaveObservacionResultItem", "AnalisisResultadosInternacion", FormMethod.Post, new { enctype = "form" }))
 {
-    @Html.AntiForgeryToken()
     <div class="row">
         <div class="col-sm-1">
             Observación
@@ -88,7 +87,7 @@
 
     <input type="submit" value="Guardar" class="btn btn-success" />
 
-    <input type="button" value="Retornar" class="btn btn-default" onclick="location.href='@Url.Action("EditItem/" + Model.solicituditem.solicitud.nrosolicitud + "/" + Model.ID.codigo + "/" + Model.solicituditem.ID.items, "AnalisisResultadosInternacion")'" />
+    <input type="button" value="Retornar" class="btn btn-secondary" onclick="location.href='@Url.Action("EditItem/" + Model.solicituditem.solicitud.nrosolicitud + "/" + Model.ID.codigo + "/" + Model.solicituditem.ID.items, "AnalisisResultadosInternacion")'" />
 
 }
 <div class="text-danger">

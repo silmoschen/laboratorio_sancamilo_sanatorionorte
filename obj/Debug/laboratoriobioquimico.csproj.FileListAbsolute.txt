@@ -638,9 +638,7 @@ F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.WebPages.Razor.dll
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\WebGrease.dll
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Antlr3.Runtime.xml
-F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.pdb
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.xml
-F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.Core.pdb
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Common.Logging.Core.xml
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Google.Protobuf.xml
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Iesi.Collections.xml
@@ -653,11 +651,6 @@ F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Remotion.Li
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Remotion.Linq.EagerFetching.xml
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Renci.SshNet.xml
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\RestSharp.xml
-F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Aop.pdb
-F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Core.pdb
-F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Data.pdb
-F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Data.NHibernate5.pdb
-F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\Spring.Web.pdb
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Net.Http.Formatting.xml
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Http.xml
 F:\sidelphi32\ASPNet\Spring\laboratorio_sancamilo_sanatorionorte\bin\System.Web.Http.WebHost.xml

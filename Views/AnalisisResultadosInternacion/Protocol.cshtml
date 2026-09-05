@@ -1,7 +1,6 @@
 ﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudesInternacion
 @using (Html.BeginForm("PrintResult", "AnalisisResultadosInternacion", FormMethod.Post, new { enctype = "form" }))
 {
-    @Html.AntiForgeryToken()
     <div class="row">
         <div class="col-sm-1">
             Prot/Id
@@ -71,7 +70,7 @@
             {
                 <br />
                 <input type="submit" value="Generar Resultado" class="btn btn-success" />
-                <input type="button" value="Retornar" class="btn btn-default" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultadosInternacion")'" />
+                <input type="button" value="Retornar" class="btn btn-secondary" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultadosInternacion")'" />
             }
 
         </div>

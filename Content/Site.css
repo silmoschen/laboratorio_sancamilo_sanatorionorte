@@ -1,24 +1,128 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 72px;
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.home-page {
+    padding-top: 8px;
+    padding-bottom: 16px;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.home-hero {
+    background: #f4f7fb;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 28px;
+}
+
+.home-logo {
+    max-width: 220px;
+    height: auto;
+}
+
+.home-kicker {
+    margin: 0 0 6px 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5b6b7c;
+    font-weight: 600;
+}
+
+.home-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1d2a38;
+    margin-bottom: 8px;
+}
+
+.home-lead {
+    color: #5b6b7c;
+    font-size: 1.05rem;
+}
+
+.home-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: none;
+}
+
+.home-card .card-body {
+    padding: 24px;
+}
+
+.home-card h2 {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    color: #1d2a38;
+}
+
+.home-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-icon-internacion {
+    color: #0d6efd;
+    background: #e7f1ff;
+}
+
+.home-icon-ambulatorio {
+    color: #198754;
+    background: #e8f6ee;
+}
+
+.home-icon-estadistica {
+    color: #6f42c1;
+    background: #f3eefc;
+}
+
+.login-page {
+    min-height: 100vh;
+    background: #f4f7fb;
+}
+
+.login-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 32px 28px 28px 28px;
+    margin-top: 24px;
+}
+
+.login-logo {
+    max-width: 220px;
+    height: auto;
+}
+
+.login-title {
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: #1d2a38;
+    margin: 0;
+}
+
+.login-note {
+    margin-top: 16px;
+    padding: 12px 14px;
+    color: #5b6b7c;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+}
+
+.login-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #7a8a99;
+    font-size: 0.8rem;
 }

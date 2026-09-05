@@ -38,7 +38,6 @@ namespace laboratoriobioquimico.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Generar(ModelEstadistica pojo)
         {
             Session["report"] = pojo;

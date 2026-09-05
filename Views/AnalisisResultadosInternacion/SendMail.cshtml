@@ -4,11 +4,11 @@
     @Html.HiddenFor(model => model.nrosolicitud)
 
     <div class="row">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
+        <div class="card mb-3">
+            <div class="card-header bg-primary text-white">
                 Envío de Resultados por email
             </div>
-            <div class="panel-body">
+            <div class="card-body">
                 <div class="row">
                     <div class="col-sm-2">
                         Para
@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col-sm-6">
             <input type="submit" value="Enviar Correo" class="btn btn-success" />
-            <input type="button" value="Finalizar" class="btn btn-default" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultadosInternacion")'" />
+            <input type="button" value="Finalizar" class="btn btn-secondary" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultadosInternacion")'" />
         </div>
         <div class="col-sm-6">
             <input type="button" class="btn btn-info" value="Adjuntar Archivo(s)" onclick="adjuntarArchivos()" />

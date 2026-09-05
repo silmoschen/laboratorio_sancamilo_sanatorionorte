@@ -1,7 +1,6 @@
 ﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.Parametros
 @using (Html.BeginForm("Save", "Parametros", FormMethod.Post, new { enctype = "form" }))
 {
-    @Html.AntiForgeryToken()
     <fieldset>
         <legend>Parámetros</legend>
         @Html.HiddenFor(model => model.Id)
@@ -62,19 +61,109 @@
 
         <div class="row">
             <div class="col-sm-2">
-                Contraseña Genérica
+                Contraseña Genérica (acceso pacientes)
             </div>
             <div class="col-sm-10">
                 @Html.TextBoxFor(model => model.Parametro11)
                 <p />
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        Parámetros Servidor SMTP/POP3/IMAP
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                Servidor SMTP / Puerto
+                            </div>
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(model => model.Parametro7)
+                                <p />
+                            </div>
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(model => model.Parametro8)
+                                <p />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                Usuario / Contraseña
+                            </div>
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(model => model.Parametro9)
+                                <p />
+                            </div>
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(model => model.Parametro10)
+                                <p />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        Integración dcm4che
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                @Html.CheckBoxFor(model => model.Opt1)
+                                Habilitar Integración con dcm4che
+                                <p/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                URL Base
+                            </div>
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(model => model.Titulo1)
+                                <p />
+                            </div>
+                            <div class="col-sm-2">
+                                EndPoint
+                            </div>
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(model => model.Titulo2)
+                                <p />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                X-API-Key
+                            </div>
+                            <div class="col-sm-4">
+                                @Html.TextBoxFor(model => model.Titulo3)
+                                <p />
+                            </div>
+                            <div class="col-sm-2">
+                            </div>
+                            <div class="col-sm-4">
+
+                                <p />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row">
             <div class="col-sm-2">
                 Pie Login
             </div>
             <div class="col-sm-10">
-                @Html.TextAreaFor(model => model.Texto2, new { style = "width: 800px; height: 300px;" })
+                @Html.TextAreaFor(model => model.Texto2, new { style = "width: 100%; height: 150px;" })
                 <p />
             </div>
         </div>
@@ -84,46 +173,10 @@
                 Membrete Informe Resultados
             </div>
             <div class="col-sm-10">
-                @Html.EditorFor(model => model.Texto1)
-                <p />
+                @Html.EditorFor(model => model.Texto1, new { htmlAttributes = new { style = "width: 100%; height: 500;" } })
             </div>
         </div>
 
-        <div class="row">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    Parámetros Servidor SMTP/POP3/IMAP
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            Servidor SMTP / Puerto
-                        </div>
-                        <div class="col-sm-4">
-                            @Html.TextBoxFor(model => model.Parametro7)
-                            <p />
-                        </div>
-                        <div class="col-sm-4">
-                            @Html.TextBoxFor(model => model.Parametro8)
-                            <p />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2">
-                            Usuario / Contraseña
-                        </div>
-                        <div class="col-sm-4">
-                            @Html.TextBoxFor(model => model.Parametro9)
-                            <p />
-                        </div>
-                        <div class="col-sm-4">
-                            @Html.TextBoxFor(model => model.Parametro10)
-                            <p />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <p>
             <input type="submit" value="Guardar" class="btn btn-success" />
         </p>

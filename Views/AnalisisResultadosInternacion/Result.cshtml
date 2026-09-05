@@ -56,7 +56,6 @@
 </div>
 @using (Html.BeginForm("Save", "AnalisisResultadosInternacion", FormMethod.Post, new { enctype = "form" }))
 {
-    @Html.AntiForgeryToken()
     <div class="row">
         <div class="col-sm-6">
             <h4>
@@ -70,7 +69,7 @@
         <div class="col-sm-4">
             <br />
             <input type="submit" value="Guardar Resultado" class="btn btn-success" />
-            <input type="button" value="Retornar" class="btn btn-default" onclick="location.href='@Url.Action("loadProtocol/" + Model.solicitud.nrosolicitud, "AnalisisResultadosInternacion")'" />
+            <input type="button" value="Retornar" class="btn btn-secondary" onclick="location.href='@Url.Action("loadProtocol/" + Model.solicitud.nrosolicitud, "AnalisisResultadosInternacion")'" />
         </div>
     </div>
 

@@ -39,5 +39,8 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.entities
         public virtual string Titulo8 { get; set; }
         public virtual string Titulo9 { get; set; }
         public virtual string Titulo10 { get; set; }
+
+        public virtual bool Opt1 { get; set; }
+        public virtual bool Opt2 { get; set; }
     }
 }

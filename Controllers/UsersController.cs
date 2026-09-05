@@ -89,7 +89,6 @@ namespace laboratoriobioquimico.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         [UpdateFilter]
         public ActionResult Save(Users pojo)
         {
@@ -111,7 +110,6 @@ namespace laboratoriobioquimico.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         [UpdateFilter]
         public ActionResult Delete(long id)
         {

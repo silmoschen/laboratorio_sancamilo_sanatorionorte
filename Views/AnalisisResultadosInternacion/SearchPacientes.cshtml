@@ -1,20 +1,17 @@
 ﻿<!-- Popup Paciente -->
-<div id="searchPacienteModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+<div id="searchPacienteModal" class="modal fade" tabindex="-1" aria-labelledby="searchPacienteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    ×
-                </button>
-                <h2>
-                    Buscar Protocolo
-                </h2>
-                <div class="row">
+                <h5 class="modal-title" id="searchPacienteModalLabel">Buscar Protocolo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
                     <div class="col-sm-5">
                         <input type="text" id="txtnom" class="form-control" placeholder="Apellido Paciente + ENTER" onkeypress="keypresspacienteprot(event);" />
                     </div>
-                    <div class="col-sm-1">
+                    <div class="col-sm-2">
                         <input type="button" value="Buscar" class="btn btn-info" onclick="findPacienteProtocol()" />
                     </div>
                     <div class="col-sm-5">
@@ -22,12 +19,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-sm-12" id="lista" style="height: 400px; overflow: auto;">
-                            @Html.Partial("Pacientes")
-                            @Html.Partial("ProtocolosPaciente")
-                        </div>
+                <div class="row">
+                    <div class="col-sm-12" id="lista" style="height: 400px; overflow: auto;">
+                        @Html.Partial("Pacientes")
+                        @Html.Partial("ProtocolosPaciente")
                     </div>
                 </div>
             </div>
