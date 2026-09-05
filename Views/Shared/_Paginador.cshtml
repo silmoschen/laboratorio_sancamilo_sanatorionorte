@@ -1,0 +1,149 @@
+@{
+    dynamic paginador = Model;
+    int paginaActual = paginador != null ? (int)paginador.PaginaActual : 1;
+    int totalPaginas = paginador != null ? (int)paginador.TotalPaginas : 0;
+    long totalRegistros = paginador != null ? Convert.ToInt64(paginador.TotalRegistros) : 0;
+    bool hayResultados = totalRegistros > 0;
+    if (hayResultados && totalPaginas < 1)
+    {
+        totalPaginas = 1;
+    }
+    bool puedeAnterior = hayResultados && paginaActual > 1;
+    bool puedeSiguiente = hayResultados && paginaActual < totalPaginas;
+
+    int ventana = 2;
+    int desde = Math.Max(1, paginaActual - ventana);
+    int hasta = hayResultados ? Math.Min(totalPaginas, paginaActual + ventana) : 0;
+    var paginas = new System.Collections.Generic.List<int>();
+    if (hayResultados)
+    {
+        if (desde > 1)
+        {
+            paginas.Add(1);
+            if (desde > 2)
+            {
+                paginas.Add(-1);
+            }
+        }
+        for (int i = desde; i <= hasta; i++)
+        {
+            paginas.Add(i);
+        }
+        if (hasta < totalPaginas)
+        {
+            if (hasta < totalPaginas - 1)
+            {
+                paginas.Add(-1);
+            }
+            paginas.Add(totalPaginas);
+        }
+    }
+}
+
+<nav class="pager-bar" aria-label="Paginaci&oacute;n">
+    @if (hayResultados)
+    {
+        <ul class="pagination pager-pages">
+            <li class="page-item @(puedeAnterior ? "" : "disabled")">
+                @if (puedeAnterior)
+                {
+                    <a class="page-link" href="@Url.Action("Index", new { pagina = 1 })" title="Primera p&aacute;gina" aria-label="Primera p&aacute;gina">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="pager-label">Primera</span>
+                    </a>
+                }
+                else
+                {
+                    <span class="page-link" aria-disabled="true">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="pager-label">Primera</span>
+                    </span>
+                }
+            </li>
+            <li class="page-item @(puedeAnterior ? "" : "disabled")">
+                @if (puedeAnterior)
+                {
+                    <a class="page-link" href="@Url.Action("Index", new { pagina = paginaActual - 1 })" title="P&aacute;gina anterior" aria-label="P&aacute;gina anterior">
+                        <span aria-hidden="true">&lsaquo;</span>
+                        <span class="pager-label">Anterior</span>
+                    </a>
+                }
+                else
+                {
+                    <span class="page-link" aria-disabled="true">
+                        <span aria-hidden="true">&lsaquo;</span>
+                        <span class="pager-label">Anterior</span>
+                    </span>
+                }
+            </li>
+
+            @foreach (int n in paginas)
+            {
+                if (n < 0)
+                {
+                    <li class="page-item disabled">
+                        <span class="page-link pager-ellipsis">&hellip;</span>
+                    </li>
+                }
+                else if (n == paginaActual)
+                {
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">@n</span>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index", new { pagina = n })">@n</a>
+                    </li>
+                }
+            }
+
+            <li class="page-item @(puedeSiguiente ? "" : "disabled")">
+                @if (puedeSiguiente)
+                {
+                    <a class="page-link" href="@Url.Action("Index", new { pagina = paginaActual + 1 })" title="P&aacute;gina siguiente" aria-label="P&aacute;gina siguiente">
+                        <span class="pager-label">Siguiente</span>
+                        <span aria-hidden="true">&rsaquo;</span>
+                    </a>
+                }
+                else
+                {
+                    <span class="page-link" aria-disabled="true">
+                        <span class="pager-label">Siguiente</span>
+                        <span aria-hidden="true">&rsaquo;</span>
+                    </span>
+                }
+            </li>
+            <li class="page-item @(puedeSiguiente ? "" : "disabled")">
+                @if (puedeSiguiente)
+                {
+                    <a class="page-link" href="@Url.Action("Index", new { pagina = totalPaginas })" title="&Uacute;ltima p&aacute;gina" aria-label="&Uacute;ltima p&aacute;gina">
+                        <span class="pager-label">&Uacute;ltima</span>
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                }
+                else
+                {
+                    <span class="page-link" aria-disabled="true">
+                        <span class="pager-label">&Uacute;ltima</span>
+                        <span aria-hidden="true">&raquo;</span>
+                    </span>
+                }
+            </li>
+        </ul>
+    }
+
+    <div class="pager-meta">
+        @if (hayResultados)
+        {
+            <span><strong>@totalRegistros</strong> registros</span>
+            <span class="pager-separator" aria-hidden="true"></span>
+            <span><strong>@paginaActual</strong> / <strong>@totalPaginas</strong></span>
+        }
+        else
+        {
+            <span>No hay resultados para esta b&uacute;squeda</span>
+        }
+    </div>
+</nav>
