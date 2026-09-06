@@ -129,7 +129,14 @@
     padding: 12px 14px;
     color: #5b6b7c;
     font-size: 0.9rem;
-    white-space: pre-wrap;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.login-note p {
+    margin: 0;
+    text-align: center;
+    line-height: 1.25;
 }
 
 .login-footer {

@@ -60,7 +60,10 @@
                 @if (Model != null && Model.EntidadPie != null)
                 {
                     <div class="login-note">
-                        @Model.EntidadPie
+                        @foreach (var line in Model.EntidadPie.Replace("\r\n", "\n").Split('\n'))
+                        {
+                            <p>@line</p>
+                        }
                     </div>
                 }
 
