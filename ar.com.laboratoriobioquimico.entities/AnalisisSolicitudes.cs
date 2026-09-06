@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
+using System;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.entities
 {
@@ -19,7 +19,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.entities
         [AllowHtml]
         [UIHint("tinymce_mini")]
         public string emailbody { get; set; }
-        public String mensaje { get; set; }
+        public string mensaje { get; set; }
 
         public string fecha1 { get {
             if (fecha.Length < 8) return fecha;

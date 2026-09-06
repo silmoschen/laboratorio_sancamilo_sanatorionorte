@@ -1,4 +1,5 @@
 ﻿@model laboratoriobioquimico.ar.com.laboratoriobioquimico.utiles.PaginadorGenerico<laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudesInternacion>
+@using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities
 <table class="table">
     <thead>
         <tr>
@@ -43,6 +44,18 @@
 	        @if (c.paciente != null)
                 {
                 @c.paciente.nombre
+                }
+
+                @if (c.logsDcm4che != null && c.logsDcm4che.Count > 0)
+                {
+                    <span style="font-size:8.0pt">
+                        <ul type="square">
+                            @foreach (AnalisisSolicitudesInternacionSenddcm4che envio in c.logsDcm4che)
+                            {
+                                <li style="color:navy">@(envio.fechahora + " " + envio.opt1 + " " + envio.opt2 + " " + envio.estado)</li>
+                            }
+                        </ul>
+                    </span>
                 }
             </td>
             <td valign="top">

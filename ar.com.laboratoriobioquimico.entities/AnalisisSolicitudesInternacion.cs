@@ -47,12 +47,14 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.entities
         public bool dcm4che { get; set; }
 
         public IList<AnalisisSolicitudesInternacionSendResults> logs;
+        public IList<AnalisisSolicitudesInternacionSenddcm4che> logsDcm4che { get; set; }
         public IList<AttachFilesInternacion> archivosAdjuntos { get; set; }
 
         public AnalisisSolicitudesInternacion()
         {
             practicas = new List<AnalisisSolicitudesInternacionItems>();
             archivosAdjuntos = new List<AttachFilesInternacion>();
+            logsDcm4che = new List<AnalisisSolicitudesInternacionSenddcm4che>();
         }
         public override bool Equals(object obj)
         {

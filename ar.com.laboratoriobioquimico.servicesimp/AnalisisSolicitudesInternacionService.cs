@@ -1,8 +1,8 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
+﻿using System.Collections.Generic;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.services;
 using laboratoriobioquimico.Models;
-using System.Collections.Generic;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
 {
@@ -10,6 +10,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
     {
         private IAnalisisSolicitudesInternacionDao entityDao { get; set; }
         private IAnalisisSolicitudesInternacionSendResultsDao sendmailDao { get; set; }
+        private IAnalisisSolicitudesInternacionSenddcm4cheDao senddcm4cheDao { get; set; }        
         private INbuinosInternacionDao nbuinosDao { get; set; }
         private IPacientesInternacionDao pacienteDao { get; set; }
         private IParametrosDao parametroDao { get; set; }
@@ -46,7 +47,11 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
 
             var l = entityDao.getAll(pageNumber, pageSize, null, null, null, orderByDesc);
 
-            foreach (var o in l) o.dcm4che = p.Opt1;
+            foreach (var o in l)
+            {
+                o.dcm4che = p.Opt1;
+                o.logsDcm4che = senddcm4cheDao.getList(o.nrosolicitud);
+            }
 
             return l;
         }
@@ -181,6 +186,16 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
         public string getRutaSincro()
         {
             return rutaSincro;
+        }
+
+        public void saveSenddcm4che(AnalisisSolicitudesInternacionSenddcm4che entity)
+        {
+            senddcm4cheDao.persist(entity);
+        }
+
+        public IList<AnalisisSolicitudesInternacionSenddcm4che> getListSenddcm4che(string nrosolicitud)
+        {
+            return senddcm4cheDao.getList(nrosolicitud);
         }
     }
 }

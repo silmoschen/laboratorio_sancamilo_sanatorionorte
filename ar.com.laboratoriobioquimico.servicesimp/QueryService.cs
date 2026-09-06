@@ -1,6 +1,6 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
+﻿using System.Collections.Generic;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.services;
-using System.Collections.Generic;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
 {

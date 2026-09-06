@@ -240,6 +240,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\AnalisisSolicitudesInternacionDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\AnalisisSolicitudesDao.cs" />
+    <Compile Include="ar.com.laboratoriobioquimico.daoimp\AnalisisSolicitudesInternacionSenddcm4cheDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\AnalisisSolicitudesInternacionSendResultsDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\AnalisisSolicitudesSendResultsDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\AttachFilesInternacionDao.cs" />
@@ -272,6 +273,7 @@
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\UsersDAO.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.dao\IAnalisisSolicitudesInternacionDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.dao\IAnalisisSolicitudesDao.cs" />
+    <Compile Include="ar.com.laboratoriobioquimico.dao\IAnalisisSolicitudesInternacionSenddcm4cheDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.dao\IAnalisisSolicitudesInternacionSendResultsDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.dao\IAnalisisSolicitudesSendResultsDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.dao\IAttachFilesInternacionDao.cs" />
@@ -305,6 +307,7 @@
     <Compile Include="ar.com.laboratoriobioquimico.entities\AnalisisSolicitudesInternacion.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\AnalisisSolicitudes.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\AnalisisSolicitudesInternacionItems.cs" />
+    <Compile Include="ar.com.laboratoriobioquimico.entities\AnalisisSolicitudesInternacionSenddcm4che.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\AnalisisSolicitudesItems.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\AnalisisSolicitudesInternacionItemsResultado.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\AnalisisSolicitudesItemsResultado.cs" />
@@ -315,7 +318,6 @@
     <Compile Include="ar.com.laboratoriobioquimico.entities\Estadisticas.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\PacientesInternacionMails.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\PacientesMails.cs" />
-    <Compile Include="ar.com.laboratoriobioquimico.rest\RestApi.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.servicesimp\AttachFilesInternacionService.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.servicesimp\FacturacionesProfesionalService.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.servicesimp\AttachFilesAmbulatorioService.cs" />
@@ -476,6 +478,7 @@
     <EmbeddedResource Include="ar.com.laboratoriobioquimico.mappings\AnalisisSolicitudesInternacionSendResults.hbm.xml" />
     <EmbeddedResource Include="ar.com.laboratoriobioquimico.mappings\AttachFilesAmbulatorio.hbm.xml" />
     <EmbeddedResource Include="ar.com.laboratoriobioquimico.mappings\AttachFilesInternacion.hbm.xml" />
+    <EmbeddedResource Include="ar.com.laboratoriobioquimico.mappings\AnalisisSolicitudesInternacionSenddcm4che.hbm.xml" />
     <Content Include="config\archsincro.txt" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -876,6 +879,8 @@
     <Content Include="Views\EstadisticasReportes\PreviewResult.cshtml" />
     <Content Include="Views\AnalisisResultados\SendMail.cshtml" />
     <Content Include="Views\AnalisisResultadosInternacion\SendMail.cshtml" />
+    <Content Include="Views\AnalisisResultadosInternacion\Senddcm4che.cshtml" />
+    <Content Include="sql\analisis_solicitudes_internacion_send_dcm4che.sql" />
     <Content Include="Views\AnalisisResultados\addFiles.cshtml" />
     <Content Include="Views\AnalisisResultadosInternacion\addFiles.cshtml" />
     <Content Include="Views\HomePaciente\Index.cshtml" />

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
+
+  <class name="AnalisisSolicitudesInternacionSenddcm4che" table="analisis_solicitudes_internacion_send_dcm4che" dynamic-update="true">
+
+    <cache usage="nonstrict-read-write" region="LongTerm" />
+
+    <id name="id" column ="id" type="string">
+      <generator class="assigned"/>
+    </id>
+    
+    <property name="opt1" column="opt1" not-null="false" type="string"/>
+    <property name="opt2" column="opt2" not-null="false" type="string"/>
+    <property name="opt3" column="opt3" not-null="false" type="string"/>
+    <property name="estado" column="estado" not-null="false" type="string"/>
+    <property name="fechahora" column="fecha_hora" not-null="false" type="datetime"/>
+
+    <many-to-one name="solicitud" class="AnalisisSolicitudesInternacion" column="fk_nrosolicitud" />
+
+  </class>
+
+</hibernate-mapping>

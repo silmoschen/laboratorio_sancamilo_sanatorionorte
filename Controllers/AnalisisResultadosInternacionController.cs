@@ -1,15 +1,18 @@
-﻿using ApplicationContext;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Net.Mail;
+using System.Text;
+using System.Web.Mvc;
+using System.Web;
+using System;
+using ApplicationContext;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico._filters;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.services;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.utiles;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Net.Mail;
-using System.Text;
-using System.Web;
-using System.Web.Mvc;
 
 namespace laboratoriobioquimico.Controllers
 {
@@ -555,6 +558,118 @@ namespace laboratoriobioquimico.Controllers
             }
 
             return RedirectToAction("/SendMail/" + id);
+        }
+
+        [AllowAnonymous]
+        public ActionResult Senddcm4che(string id)
+        {
+            AnalisisSolicitudesInternacion entity = entityService.find(id);
+            foreach (AnalisisSolicitudesInternacionItems c in entity.practicas) c.Select = true;
+
+            entity.codpac = (entity.paciente != null && entity.paciente.codpac != null) ? entity.paciente.codpac : "";
+
+            var list = reportService.getProtocoloResultInternacion(entity.nrosolicitud, entity.practicas);
+
+            Session["__entitiesreport"] = list;
+            Session["__idprotocol"] = id;
+
+            entity.logsDcm4che = entityService.getListSenddcm4che(id);
+
+            return View("Senddcm4che", entity);
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public ActionResult Senddcm4cheTo(AnalisisSolicitudesInternacion pojo)
+        {
+            string estado = "";
+
+            if (pojo.codpac == null || pojo.codpac.Trim().Equals(""))
+            {
+                Session["error"] = "ERROR: código de paciente requerido";
+                return RedirectToAction("/Senddcm4che/" + pojo.nrosolicitud);
+            }
+
+            AnalisisSolicitudesInternacion entity = entityService.find(pojo.nrosolicitud);
+            Parametros parametro = parametroService.find(1);
+
+            string pdfPath = Server.MapPath("~/work/pdf/" + pojo.nrosolicitud + ".pdf");
+
+            if (!System.IO.File.Exists(pdfPath))
+            {
+                Session["error"] = "ERROR: no se encontró el PDF en ~/work/pdf/";
+                return RedirectToAction("/Senddcm4che/" + pojo.nrosolicitud);
+            }
+
+            if (parametro == null || string.IsNullOrEmpty(parametro.Titulo1) || string.IsNullOrEmpty(parametro.Titulo2) || string.IsNullOrEmpty(parametro.Titulo3))
+            {
+                Session["error"] = "ERROR: parámetros de dcm4che incompletos";
+                return RedirectToAction("/Senddcm4che/" + pojo.nrosolicitud);
+            }
+
+            try
+            {
+                HttpStatusCode statusCode;
+                string detalle;
+
+                using (HttpClient client = new HttpClient())
+                using (MultipartFormDataContent form = new MultipartFormDataContent())
+                {
+                    client.DefaultRequestHeaders.Add("x-api-key", parametro.Titulo3);
+                    form.Add(new StringContent(pojo.codpac), "codpac");
+
+                    ByteArrayContent pdfContent = new ByteArrayContent(System.IO.File.ReadAllBytes(pdfPath));
+                    pdfContent.Headers.ContentType = new MediaTypeHeaderValue("application/pdf");
+                    form.Add(pdfContent, "file", Path.GetFileName(pdfPath));
+
+                    HttpResponseMessage response = client.PostAsync(parametro.Titulo1 + parametro.Titulo2, form).Result;
+                    statusCode = response.StatusCode;
+                    detalle = response.Content.ReadAsStringAsync().Result;
+                }
+
+                if (string.IsNullOrEmpty(detalle)) detalle = statusCode.ToString();
+                if (detalle.Length > 255) detalle = detalle.Substring(0, 255);
+
+                if (statusCode >= HttpStatusCode.OK && statusCode < HttpStatusCode.Ambiguous)
+                    estado = "Enviado Correctamente a dcm4che";
+                else if (statusCode == HttpStatusCode.NotFound)
+                    estado = "ERROR: no se encontró el destino o el paciente en dcm4che";
+                else
+                    estado = "ERROR: " + statusCode + " " + detalle;
+
+                if (estado.Length > 255) estado = estado.Substring(0, 255);
+
+                AnalisisSolicitudesInternacionSenddcm4che log = new AnalisisSolicitudesInternacionSenddcm4che();
+                log.id = utiles.guiid();
+                log.fechahora = DateTime.Now;
+                log.solicitud = entity;
+                log.opt1 = pojo.codpac;
+                log.opt2 = statusCode.ToString();
+                log.opt3 = detalle;
+                log.estado = estado;
+                entityService.saveSenddcm4che(log);
+            }
+            catch (Exception ex)
+            {
+                estado = "ERROR: " + ex.Message;
+
+                string detalle = ex.Message;
+                if (detalle != null && detalle.Length > 255) detalle = detalle.Substring(0, 255);
+
+                AnalisisSolicitudesInternacionSenddcm4che log = new AnalisisSolicitudesInternacionSenddcm4che();
+                log.id = utiles.guiid();
+                log.fechahora = DateTime.Now;
+                log.solicitud = entity;
+                log.opt1 = pojo.codpac;
+                log.opt2 = "ERROR";
+                log.opt3 = detalle;
+                log.estado = estado.Length > 255 ? estado.Substring(0, 255) : estado;
+                entityService.saveSenddcm4che(log);
+            }
+
+            Session["error"] = estado;
+
+            return Redirect("IndexPag");
         }
 
     }

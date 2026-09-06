@@ -1,14 +1,14 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
-using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
+﻿using System.Collections.Generic;
 using System;
-using System.Collections.Generic;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
 {
     public class AnalisisSolicitudesSendResultsDao : GenericDao<AnalisisSolicitudesSendResults, string>, IAnalisisSolicitudesSendResultsDao
     {
 
-        public IList<AnalisisSolicitudesSendResults> getList(String nrosolicitud)
+        public IList<AnalisisSolicitudesSendResults> getList(string nrosolicitud)
         {
             object[] l = { nrosolicitud };
             return getAll("from AnalisisSolicitudesSendResults c where c.solicitud.nrosolicitud = :p0 order by c.fechahora desc", l);

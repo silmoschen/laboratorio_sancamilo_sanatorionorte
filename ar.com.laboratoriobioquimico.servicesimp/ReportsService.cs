@@ -1,9 +1,9 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
+﻿using System.Collections.Generic;
+using System;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.rest.Models;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.services;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.utiles;
-using System;
-using System.Collections.Generic;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
 {

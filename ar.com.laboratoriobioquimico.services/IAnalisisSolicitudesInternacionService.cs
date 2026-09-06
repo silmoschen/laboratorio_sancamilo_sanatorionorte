@@ -1,6 +1,6 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
+﻿using System.Collections.Generic;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 using laboratoriobioquimico.Models;
-using System.Collections.Generic;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.services
 {
@@ -33,6 +33,9 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.services
         void saveSendMail(AnalisisSolicitudesInternacionSendResults entity);
         IList<AnalisisSolicitudesInternacionSendResults> getListSendResult(string nrosolicitud);
         IList<AnalisisSolicitudesInternacion> getListProtocolosFecha(string desde, string hasta, IList<string> orderByDesc);
+
+        void saveSenddcm4che(AnalisisSolicitudesInternacionSenddcm4che entity);
+        IList<AnalisisSolicitudesInternacionSenddcm4che> getListSenddcm4che(string nrosolicitud);
 
         string getRutaSincro();
     }

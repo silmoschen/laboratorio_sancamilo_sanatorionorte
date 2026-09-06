@@ -1,7 +1,7 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
-using System;
+﻿using System.Collections.Generic;
 using System.Collections;
-using System.Collections.Generic;
+using System;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
 {

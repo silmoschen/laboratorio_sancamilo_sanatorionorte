@@ -1,12 +1,12 @@
-﻿using ApplicationContext;
-using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
-using laboratoriobioquimico.ar.com.laboratoriobioquimico.services;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using System.Web;
 using System.Web.Http;
+using System.Web;
+using System;
+using ApplicationContext;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.services;
 
 namespace laboratoriobioquimico.Controllers
 {

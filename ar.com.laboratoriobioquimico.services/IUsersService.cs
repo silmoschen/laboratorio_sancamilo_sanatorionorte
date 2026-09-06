@@ -1,6 +1,6 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
+﻿using System.Collections.Generic;
 using System;
-using System.Collections.Generic;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.services
 {
@@ -11,7 +11,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.services
         void update(Users entity);
         string remove(Users entity);
         IList<Users> getAll(int pageNumber, int pageSize);
-        IList<Users> getList(String find, int pageNumber, int pageSize);
+        IList<Users> getList(string find, int pageNumber, int pageSize);
         long getMaxPage(int pageSize);
        
         IList<Roles> getListRoles();

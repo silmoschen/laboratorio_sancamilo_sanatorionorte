@@ -1,19 +1,19 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Text.RegularExpressions;
+using System;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.utiles
 {
     public class Utiles
     {
-        public Boolean validarEmail(String email)
+        public Boolean validarEmail(string email)
         {
             Boolean r = false;
-            String expresion;
+            string expresion;
             expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
             if (Regex.IsMatch(email, expresion))
             {
-                if (Regex.Replace(email, expresion, String.Empty).Length == 0)
+                if (Regex.Replace(email, expresion, string.Empty).Length == 0)
                 {
                     r = true;
                 }

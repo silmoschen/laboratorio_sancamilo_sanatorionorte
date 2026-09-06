@@ -1,8 +1,8 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
+﻿using System.Collections.Generic;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
-using NHibernate;
 using NHibernate.Criterion;
-using System.Collections.Generic;
+using NHibernate;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
 {

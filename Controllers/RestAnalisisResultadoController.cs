@@ -1,10 +1,10 @@
-﻿using ApplicationContext;
+﻿using System.Net.Http.Headers;
+using System.Net.Http;
+using System.Web.Http;
+using ApplicationContext;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.services;
 using laboratoriobioquimico.Models;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Web.Http;
 
 namespace laboratoriobioquimico.Controllers
 {

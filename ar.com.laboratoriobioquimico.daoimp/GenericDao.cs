@@ -1,10 +1,10 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
-using NHibernate;
-using NHibernate.Exceptions;
-using System;
+﻿using System.Collections.Generic;
 using System.Collections;
-using System.Collections.Generic;
 using System.Threading.Tasks;
+using System;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
+using NHibernate.Exceptions;
+using NHibernate;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
 {

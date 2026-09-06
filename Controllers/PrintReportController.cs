@@ -1,7 +1,7 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
-using Microsoft.Reporting.WebForms;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
+using Microsoft.Reporting.WebForms;
 
 namespace laboratoriobioquimico.Controllers
 {

@@ -1,7 +1,7 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
-using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
+﻿using System.Collections.Generic;
 using System;
-using System.Collections.Generic;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
 {
@@ -13,7 +13,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             return getAll("from ProfesionalesInternacion c order by c.Nombre", pageNumber, pageSize);
         }
 
-        public IList<ProfesionalesInternacion> getList(String find, int pageNumber, int pageSize)
+        public IList<ProfesionalesInternacion> getList(string find, int pageNumber, int pageSize)
         {
             return getAll("from ProfesionalesInternacion c where c.Nombre like " + "'" + find + "%' order by c.Nombre", pageNumber, pageSize);
         }

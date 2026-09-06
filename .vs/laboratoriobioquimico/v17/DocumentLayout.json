@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.entities\\analisissolicitudesinternacionsenddcm4che.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:ar.com.laboratoriobioquimico.entities\\analisissolicitudesinternacionsenddcm4che.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\controllers\\analisisresultadosinternacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:controllers\\analisisresultadosinternacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.servicesimp\\facturacionesprofesionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:ar.com.laboratoriobioquimico.servicesimp\\facturacionesprofesionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnalisisSolicitudesInternacionSenddcm4che.cs",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.entities\\AnalisisSolicitudesInternacionSenddcm4che.cs",
+              "RelativeDocumentMoniker": "ar.com.laboratoriobioquimico.entities\\AnalisisSolicitudesInternacionSenddcm4che.cs",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.entities\\AnalisisSolicitudesInternacionSenddcm4che.cs",
+              "RelativeToolTip": "ar.com.laboratoriobioquimico.entities\\AnalisisSolicitudesInternacionSenddcm4che.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T20:36:20.588Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FacturacionesProfesionalService.cs",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.servicesimp\\FacturacionesProfesionalService.cs",
+              "RelativeDocumentMoniker": "ar.com.laboratoriobioquimico.servicesimp\\FacturacionesProfesionalService.cs",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.servicesimp\\FacturacionesProfesionalService.cs",
+              "RelativeToolTip": "ar.com.laboratoriobioquimico.servicesimp\\FacturacionesProfesionalService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T20:30:00.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnalisisResultadosInternacionController.cs",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\AnalisisResultadosInternacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnalisisResultadosInternacionController.cs",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\AnalisisResultadosInternacionController.cs",
+              "RelativeToolTip": "Controllers\\AnalisisResultadosInternacionController.cs",
+              "ViewState": "AgIAAGcCAAAAAAAAAAAAAGICAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T20:26:07.442Z",
+              "EditorCaption": ""
             }
           ]
         }

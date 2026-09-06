@@ -1,0 +1,118 @@
+@model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudesInternacion
+@using (Html.BeginForm("Senddcm4cheTo", "AnalisisResultadosInternacion", FormMethod.Post, new { enctype = "form" }))
+{
+    @Html.HiddenFor(model => model.nrosolicitud)
+
+    <div class="row">
+        <div class="card mb-3">
+            <div class="card-header bg-primary text-white">
+                Envío de Resultados a dcm4che
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-2">
+                        Nro. Solicitud
+                    </div>
+                    <div class="col-sm-4">
+                        @Model.nrosolicitud
+                        <p />
+                    </div>
+                    <div class="col-sm-2">
+                        Fecha
+                    </div>
+                    <div class="col-sm-4">
+                        @Model.fecha1
+                        <p />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        Nombre
+                    </div>
+                    <div class="col-sm-4">
+                        @if (Model.paciente != null)
+                        {
+                            @Model.paciente.nombre
+                        }
+                        <p />
+                    </div>
+                    <div class="col-sm-2">
+                        Obra Social
+                    </div>
+                    <div class="col-sm-4">
+                        @if (Model.obrasocial != null)
+                        {
+                            @Model.obrasocial.nombre
+                        }
+                        <p />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        Código Paciente
+                    </div>
+                    <div class="col-sm-4">
+                        @Html.TextBoxFor(model => model.codpac, new { autocomplete = "off" })
+                        <p />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <input type="submit" value="Enviar a dcm4che" class="btn btn-success" />
+            <input type="button" value="Finalizar" class="btn btn-secondary" onclick="location.href='@Url.Action("IndexPag", "AnalisisResultadosInternacion")'" />
+        </div>
+    </div>
+
+}
+<hr />
+
+<br />
+
+<p>
+    <iframe id="content" width="100%" height="300" frameborder="0" src=@Url.Content("/PrintReport/PrintReportPDF/ReportProtocoloResult/" + @Model.nrosolicitud)>
+    </iframe>
+</p>
+<table>
+    @{
+        if (Model.logsDcm4che != null && Model.logsDcm4che.Count > 0)
+        {
+            <tr>
+                <td valign="top">
+                    <h3>
+                        Envios Realizados
+                    </h3>
+                </td>
+            </tr>
+
+            foreach (var c in Model.logsDcm4che)
+            {
+                <tr>
+                    <td valign="top">
+                        @c.fechahora
+                    </td>
+                    <td valign="top">
+                        @c.opt1
+                    </td>
+                    <td valign="top">
+                        @c.opt2
+                    </td>
+                    <td valign="top">
+                        @c.estado
+                    </td>
+                </tr>
+            }
+        }
+    }
+</table>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("input:text,form").attr("autocomplete", "off");
+    })
+
+</script>

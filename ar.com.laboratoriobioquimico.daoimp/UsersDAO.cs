@@ -1,8 +1,7 @@
-﻿
+﻿using System.Collections.Generic;
+using System;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
-using System;
-using System.Collections.Generic;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
 {
@@ -14,7 +13,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             return getAll("from Users c order by c.Usuario", pageNumber, pageSize);
         }
 
-        public IList<Users> getList(String find, int pageNumber, int pageSize)
+        public IList<Users> getList(string find, int pageNumber, int pageSize)
         {
             return getAll("from Users c where c.Usuario like " + "'" + find + "%' order by c.Usuario", pageNumber, pageSize);
         }
@@ -36,7 +35,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             return get("from Users c where c.Usuario = :p0", l);
         }
 
-         public IList<Users> getListUsers(String campo, String valor, String orden)
+         public IList<Users> getListUsers(string campo, string valor, string orden)
          {
              object[] l = { "%" + valor + "%" };
              return getAll("from Users c where c." + campo + " like :p0 order by c." + orden, l, 0, 10000);

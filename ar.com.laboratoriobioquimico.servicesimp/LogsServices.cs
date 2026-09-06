@@ -1,8 +1,8 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
+﻿using System.Collections.Generic;
+using System;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.services;
-using System;
-using System.Collections.Generic;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
 {
@@ -30,7 +30,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
             return entityDao.getAll(pageNumber, pageSize);
         }
 
-        public IList<Logs> getList(String find, int pageNumber, int pageSize)
+        public IList<Logs> getList(string find, int pageNumber, int pageSize)
         {
             return entityDao.getList(find, pageNumber, pageSize);
         }
