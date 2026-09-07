@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\controllers\\analisisresultadosinternacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultados\\sendmail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultados\\sendmail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultadosinternacion\\sendmail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultadosinternacion\\sendmail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultadosinternacion\\senddcm4che.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultadosinternacion\\senddcm4che.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\controllers\\analisisresultadosinternacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:controllers\\analisisresultadosinternacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.entities\\analisissolicitudesinternacionsenddcm4che.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.entities\\analisissolicitudesinternacionsenddcm4che.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:ar.com.laboratoriobioquimico.entities\\analisissolicitudesinternacionsenddcm4che.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\analisisresultadosinternacion\\senddcm4che.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\analisisresultadosinternacion\\senddcm4che.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SendMail.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\SendMail.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultados\\SendMail.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultados\\SendMail.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultados\\SendMail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-07T13:14:07.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SendMail.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultadosInternacion\\SendMail.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnalisisResultadosInternacion\\SendMail.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultadosInternacion\\SendMail.cshtml",
+              "RelativeToolTip": "Views\\AnalisisResultadosInternacion\\SendMail.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-07T13:13:27.055Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,14 +70,14 @@
               "RelativeDocumentMoniker": "Views\\AnalisisResultadosInternacion\\Senddcm4che.cshtml",
               "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\AnalisisResultadosInternacion\\Senddcm4che.cshtml",
               "RelativeToolTip": "Views\\AnalisisResultadosInternacion\\Senddcm4che.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAAD4AAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-06T22:53:33.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AnalisisSolicitudesInternacionSenddcm4che.cs",
               "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.entities\\AnalisisSolicitudesInternacionSenddcm4che.cs",
               "RelativeDocumentMoniker": "ar.com.laboratoriobioquimico.entities\\AnalisisSolicitudesInternacionSenddcm4che.cs",
@@ -51,18 +85,17 @@
               "RelativeToolTip": "ar.com.laboratoriobioquimico.entities\\AnalisisSolicitudesInternacionSenddcm4che.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-06T20:36:20.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-06T20:36:20.588Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AnalisisResultadosInternacionController.cs",
               "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\AnalisisResultadosInternacionController.cs",
               "RelativeDocumentMoniker": "Controllers\\AnalisisResultadosInternacionController.cs",
               "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\AnalisisResultadosInternacionController.cs",
               "RelativeToolTip": "Controllers\\AnalisisResultadosInternacionController.cs",
-              "ViewState": "AgIAAGcCAAAAAAAAAAAAAG0CAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAGcCAAAAAAAAAAAAAHcCAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-06T20:26:07.442Z",
               "EditorCaption": ""
