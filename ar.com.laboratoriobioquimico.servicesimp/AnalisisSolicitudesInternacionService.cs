@@ -190,6 +190,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.servicesimp
 
         public void saveSenddcm4che(AnalisisSolicitudesInternacionSenddcm4che entity)
         {
+            parametroDao.get(1);
             senddcm4cheDao.persist(entity);
         }
 

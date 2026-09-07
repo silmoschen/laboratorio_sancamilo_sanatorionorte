@@ -5,7 +5,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.entities
 {
     public class Parametros
     {
-        public virtual long Id { get; set; }
+        public virtual int Id { get; set; }
         public virtual string Parametro1 { get; set; }
         public virtual string Parametro2 { get; set; }
         public virtual string Parametro3 { get; set; }

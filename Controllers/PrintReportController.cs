@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Web;
 using System.Web.Mvc;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 using Microsoft.Reporting.WebForms;
@@ -92,12 +93,16 @@ namespace laboratoriobioquimico.Controllers
 
         public ActionResult PrintReportPDF(string id, string p2)
         {
+            List<Reports> list = (List<Reports>)Session["__entitiesreport"];
+            byte[] renderedBytes = RenderAndSavePdf(Server, list, id, p2);
+            return File(renderedBytes, "application/pdf");
+        }
+
+        public static byte[] RenderAndSavePdf(HttpServerUtilityBase server, List<Reports> list, string reportId, string nrosolicitud)
+        {
             LocalReport localReport = new LocalReport();
-            localReport.ReportPath = Server.MapPath("/Report/" + id + ".rdlc");
+            localReport.ReportPath = server.MapPath("/Report/" + reportId + ".rdlc");
 
-            List<Reports> list = null;
-
-            list = (List<Reports>)Session["__entitiesreport"];
             if (list != null)
             {
                 ReportDataSource rdc = new ReportDataSource("DataSet", list);
@@ -105,11 +110,9 @@ namespace laboratoriobioquimico.Controllers
             }
 
             string reportType = "pdf";
-            string mimeType = "application/pdf";
-            string encoding = string.Empty;
-            string fileNameExtension = string.Empty;
-            //The DeviceInfo settings should be changed based on the reportType             
-            //http://msdn2.microsoft.com/en-us/library/ms155397.aspx             
+            string mimeType;
+            string encoding;
+            string fileNameExtension;
             string deviceInfo =
                 "<DeviceInfo>" +
                 "  <OutputFormat>PDF</OutputFormat>" +
@@ -122,9 +125,7 @@ namespace laboratoriobioquimico.Controllers
                 "</DeviceInfo>";
             Warning[] warnings;
             string[] streams;
-            byte[] renderedBytes;
-            //Render the report             
-            renderedBytes = localReport.Render(
+            byte[] renderedBytes = localReport.Render(
                 reportType,
                 deviceInfo,
                 out mimeType,
@@ -133,13 +134,13 @@ namespace laboratoriobioquimico.Controllers
                 out streams,
                 out warnings);
 
-            string pdfPath = Server.MapPath("/work/pdf/" + p2 + ".pdf");
+            string pdfPath = server.MapPath("/work/pdf/" + nrosolicitud + ".pdf");
+            using (System.IO.FileStream pdfFile = new System.IO.FileStream(pdfPath, System.IO.FileMode.Create))
+            {
+                pdfFile.Write(renderedBytes, 0, renderedBytes.Length);
+            }
 
-            System.IO.FileStream pdfFile = new System.IO.FileStream(pdfPath, System.IO.FileMode.Create);
-            pdfFile.Write(renderedBytes, 0, renderedBytes.Length);
-            pdfFile.Close();
-
-            return File(renderedBytes, mimeType);
+            return renderedBytes;
         }
 
     }

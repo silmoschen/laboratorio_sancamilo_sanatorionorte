@@ -1,7 +1,15 @@
 @model laboratoriobioquimico.ar.com.laboratoriobioquimico.entities.AnalisisSolicitudesInternacion
+@{
+    var nrodoc = "";
+    if (Model.paciente != null && Model.paciente.nrodoc != null)
+    {
+        nrodoc = Model.paciente.nrodoc;
+    }
+}
 @using (Html.BeginForm("Senddcm4cheTo", "AnalisisResultadosInternacion", FormMethod.Post, new { enctype = "form" }))
 {
     @Html.HiddenFor(model => model.nrosolicitud)
+    @Html.HiddenFor(model => model.fecha)
 
     <div class="row">
         <div class="card mb-3">
@@ -49,10 +57,10 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-2">
-                        Código Paciente
+                        Nro. Documento
                     </div>
                     <div class="col-sm-4">
-                        @Html.TextBoxFor(model => model.codpac, new { autocomplete = "off" })
+                        @Html.TextBox("paciente.nrodoc", nrodoc, new { autocomplete = "off" })
                         <p />
                     </div>
                 </div>
@@ -108,7 +116,9 @@
         }
     }
 </table>
-
+<p>
+    @ViewBag.error
+</p>
 <script type="text/javascript">
 
     $(document).ready(function () {

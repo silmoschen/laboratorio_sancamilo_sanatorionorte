@@ -1,18 +1,16 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Net.Mail;
-using System.Text;
-using System.Web.Mvc;
-using System.Web;
-using System;
-using ApplicationContext;
+﻿using ApplicationContext;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico._filters;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.services;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.utiles;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using System.Net.Mail;
+using System.Text;
+using System.Web;
+using System.Web.Mvc;
 
 namespace laboratoriobioquimico.Controllers
 {
@@ -575,6 +573,9 @@ namespace laboratoriobioquimico.Controllers
 
             entity.logsDcm4che = entityService.getListSenddcm4che(id);
 
+            if (Session["error"] != null) ViewBag.error = Session["error"];
+            Session["error"] = null;
+
             return View("Senddcm4che", entity);
         }
 
@@ -584,48 +585,46 @@ namespace laboratoriobioquimico.Controllers
         {
             string estado = "";
 
-            if (pojo.codpac == null || pojo.codpac.Trim().Equals(""))
-            {
-                Session["error"] = "ERROR: código de paciente requerido";
-                return RedirectToAction("/Senddcm4che/" + pojo.nrosolicitud);
-            }
-
             AnalisisSolicitudesInternacion entity = entityService.find(pojo.nrosolicitud);
-            Parametros parametro = parametroService.find(1);
 
-            string pdfPath = Server.MapPath("~/work/pdf/" + pojo.nrosolicitud + ".pdf");
+            string externalId = pojo.nrosolicitud;
+            string patientDni = "";
+            if (pojo.paciente != null && !string.IsNullOrEmpty(pojo.paciente.nrodoc))
+                patientDni = pojo.paciente.nrodoc.Trim();
+            else if (entity.paciente != null && !string.IsNullOrEmpty(entity.paciente.nrodoc))
+                patientDni = entity.paciente.nrodoc.Trim();
 
-            if (!System.IO.File.Exists(pdfPath))
+            if (string.IsNullOrEmpty(patientDni))
             {
-                Session["error"] = "ERROR: no se encontró el PDF en ~/work/pdf/";
+                Session["error"] = "ERROR: número de documento requerido";
                 return RedirectToAction("/Senddcm4che/" + pojo.nrosolicitud);
             }
-
-            if (parametro == null || string.IsNullOrEmpty(parametro.Titulo1) || string.IsNullOrEmpty(parametro.Titulo2) || string.IsNullOrEmpty(parametro.Titulo3))
-            {
-                Session["error"] = "ERROR: parámetros de dcm4che incompletos";
-                return RedirectToAction("/Senddcm4che/" + pojo.nrosolicitud);
-            }
+            string patientName = (entity.paciente != null && entity.paciente.nombre != null) ? entity.paciente.nombre : "";
+            string studyDate = FormatStudyDate(entity.fecha);
+            string studyType = "LAB";
 
             try
             {
+                foreach (AnalisisSolicitudesInternacionItems c in entity.practicas) c.Select = true;
+                var list = reportService.getProtocoloResultInternacion(entity.nrosolicitud, entity.practicas);
+                Session["__entitiesreport"] = list;
+
+                string pdfPath = Server.MapPath("/work/pdf/" + pojo.nrosolicitud + ".pdf");
+                byte[] pdfBytes = PrintReportController.RenderAndSavePdf(Server, list, "ReportProtocoloResult", pojo.nrosolicitud);
+
+                Parametros parametro = parametroService.find(1);
+                if (parametro == null || string.IsNullOrEmpty(parametro.Titulo1) || string.IsNullOrEmpty(parametro.Titulo3))
+                {
+                    Session["error"] = "ERROR: parámetros de dcm4che incompletos";
+                    return RedirectToAction("/Senddcm4che/" + pojo.nrosolicitud);
+                }
+
+                string url = parametro.Titulo1;
+                string apiKey = parametro.Titulo3;
+
                 HttpStatusCode statusCode;
                 string detalle;
-
-                using (HttpClient client = new HttpClient())
-                using (MultipartFormDataContent form = new MultipartFormDataContent())
-                {
-                    client.DefaultRequestHeaders.Add("x-api-key", parametro.Titulo3);
-                    form.Add(new StringContent(pojo.codpac), "codpac");
-
-                    ByteArrayContent pdfContent = new ByteArrayContent(System.IO.File.ReadAllBytes(pdfPath));
-                    pdfContent.Headers.ContentType = new MediaTypeHeaderValue("application/pdf");
-                    form.Add(pdfContent, "file", Path.GetFileName(pdfPath));
-
-                    HttpResponseMessage response = client.PostAsync(parametro.Titulo1 + parametro.Titulo2, form).Result;
-                    statusCode = response.StatusCode;
-                    detalle = response.Content.ReadAsStringAsync().Result;
-                }
+                PostDcm4cheMultipart(url, apiKey, externalId, patientDni, patientName, studyDate, studyType, pdfBytes, Path.GetFileName(pdfPath), out statusCode, out detalle);
 
                 if (string.IsNullOrEmpty(detalle)) detalle = statusCode.ToString();
                 if (detalle.Length > 255) detalle = detalle.Substring(0, 255);
@@ -643,7 +642,7 @@ namespace laboratoriobioquimico.Controllers
                 log.id = utiles.guiid();
                 log.fechahora = DateTime.Now;
                 log.solicitud = entity;
-                log.opt1 = pojo.codpac;
+                log.opt1 = patientDni;
                 log.opt2 = statusCode.ToString();
                 log.opt3 = detalle;
                 log.estado = estado;
@@ -660,7 +659,7 @@ namespace laboratoriobioquimico.Controllers
                 log.id = utiles.guiid();
                 log.fechahora = DateTime.Now;
                 log.solicitud = entity;
-                log.opt1 = pojo.codpac;
+                log.opt1 = patientDni;
                 log.opt2 = "ERROR";
                 log.opt3 = detalle;
                 log.estado = estado.Length > 255 ? estado.Substring(0, 255) : estado;
@@ -670,6 +669,75 @@ namespace laboratoriobioquimico.Controllers
             Session["error"] = estado;
 
             return Redirect("IndexPag");
+        }
+
+        private void PostDcm4cheMultipart(string url, string apiKey, string externalId, string patientDni, string patientName, string studyDate, string studyType, byte[] pdfBytes, string fileName, out HttpStatusCode statusCode, out string detalle)
+        {
+            string boundary = "------------------------" + DateTime.Now.Ticks.ToString("x");
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "POST";
+            request.KeepAlive = true;
+            request.Headers.Add("X-API-Key", apiKey);
+            request.ContentType = "multipart/form-data; boundary=" + boundary;
+
+            using (Stream requestStream = request.GetRequestStream())
+            {
+                WriteFormField(requestStream, boundary, "externalId", externalId);
+                WriteFormField(requestStream, boundary, "patientDni", patientDni);
+                WriteFormField(requestStream, boundary, "patientName", patientName ?? "");
+                WriteFormField(requestStream, boundary, "studyDate", studyDate ?? "");
+                WriteFormField(requestStream, boundary, "studyType", studyType);
+
+                byte[] fileHeader = Encoding.UTF8.GetBytes(
+                    "--" + boundary + "\r\n" +
+                    "Content-Disposition: form-data; name=\"files\"; filename=\"" + fileName + "\"\r\n" +
+                    "Content-Type: application/pdf\r\n\r\n");
+                requestStream.Write(fileHeader, 0, fileHeader.Length);
+                requestStream.Write(pdfBytes, 0, pdfBytes.Length);
+
+                byte[] footer = Encoding.UTF8.GetBytes("\r\n--" + boundary + "--\r\n");
+                requestStream.Write(footer, 0, footer.Length);
+            }
+
+            try
+            {
+                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+                {
+                    statusCode = response.StatusCode;
+                    detalle = reader.ReadToEnd();
+                }
+            }
+            catch (WebException ex)
+            {
+                if (ex.Response is HttpWebResponse errorResponse)
+                {
+                    statusCode = errorResponse.StatusCode;
+                    using (StreamReader reader = new StreamReader(errorResponse.GetResponseStream()))
+                        detalle = reader.ReadToEnd();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        private void WriteFormField(Stream stream, string boundary, string name, string value)
+        {
+            byte[] bytes = Encoding.UTF8.GetBytes(
+                "--" + boundary + "\r\n" +
+                "Content-Disposition: form-data; name=\"" + name + "\"\r\n\r\n" +
+                value + "\r\n");
+            stream.Write(bytes, 0, bytes.Length);
+        }
+
+        private string FormatStudyDate(string fecha)
+        {
+            if (string.IsNullOrEmpty(fecha)) return "";
+            if (fecha.Length >= 8 && fecha.IndexOf('-') < 0 && fecha.IndexOf('/') < 0)
+                return fecha.Substring(0, 4) + "-" + fecha.Substring(4, 2) + "-" + fecha.Substring(6, 2);
+            return fecha;
         }
 
     }
