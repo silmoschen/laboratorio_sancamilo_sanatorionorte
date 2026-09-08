@@ -1,9 +1,9 @@
-﻿using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
+using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
 {
-    public class ProfesionalesUsersDao: GenericDao<ProfesionalesUsers, string>, IProfesionalesUsersDao
+    public class ProfesionalesUsersDao: CatalogDao<ProfesionalesUsers, string>, IProfesionalesUsersDao
     {
         public ProfesionalesUsers getUser(string user, string pass)
         {

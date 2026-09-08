@@ -244,6 +244,7 @@
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\AnalisisSolicitudesInternacionSendResultsDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\AnalisisSolicitudesSendResultsDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\AttachFilesInternacionDao.cs" />
+    <Compile Include="ar.com.laboratoriobioquimico.daoimp\CatalogDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\GenericDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\LogsDao.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.daoimp\NbuinosInternacionDao.cs" />

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
 
   <class name="Parametros" table="parametros1">
 
-    <cache usage="read-write" region="LongTerm" />
+    <cache usage="read-write" region="Parametros" />
 
     <id name="Id" column ="ID" type="int">
       <generator class="assigned"/>

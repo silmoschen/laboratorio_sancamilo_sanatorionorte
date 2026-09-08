@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\controllers\\analisisresultadosinternaciondcm4checontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:controllers\\analisisresultadosinternaciondcm4checontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.servicesimp\\analisissolicitudesinternacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:ar.com.laboratoriobioquimico.servicesimp\\analisissolicitudesinternacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.daoimp\\analisissolicitudesinternaciondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:ar.com.laboratoriobioquimico.daoimp\\analisissolicitudesinternaciondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.daoimp\\genericdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:ar.com.laboratoriobioquimico.daoimp\\genericdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAALcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-08T13:38:15.463Z",
+              "Title": "AnalisisResultadosInternacionDcm4cheController.cs",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\AnalisisResultadosInternacionDcm4cheController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnalisisResultadosInternacionDcm4cheController.cs",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Controllers\\AnalisisResultadosInternacionDcm4cheController.cs",
+              "RelativeToolTip": "Controllers\\AnalisisResultadosInternacionDcm4cheController.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T17:52:19.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnalisisSolicitudesInternacionService.cs",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.servicesimp\\AnalisisSolicitudesInternacionService.cs",
+              "RelativeDocumentMoniker": "ar.com.laboratoriobioquimico.servicesimp\\AnalisisSolicitudesInternacionService.cs",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.servicesimp\\AnalisisSolicitudesInternacionService.cs",
+              "RelativeToolTip": "ar.com.laboratoriobioquimico.servicesimp\\AnalisisSolicitudesInternacionService.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T17:50:44.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnalisisSolicitudesInternacionDao.cs",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.daoimp\\AnalisisSolicitudesInternacionDao.cs",
+              "RelativeDocumentMoniker": "ar.com.laboratoriobioquimico.daoimp\\AnalisisSolicitudesInternacionDao.cs",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.daoimp\\AnalisisSolicitudesInternacionDao.cs",
+              "RelativeToolTip": "ar.com.laboratoriobioquimico.daoimp\\AnalisisSolicitudesInternacionDao.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T17:50:14.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericDao.cs",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.daoimp\\GenericDao.cs",
+              "RelativeDocumentMoniker": "ar.com.laboratoriobioquimico.daoimp\\GenericDao.cs",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\ar.com.laboratoriobioquimico.daoimp\\GenericDao.cs",
+              "RelativeToolTip": "ar.com.laboratoriobioquimico.daoimp\\GenericDao.cs",
+              "ViewState": "AgIAAG4CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T17:48:54.958Z",
               "EditorCaption": ""
             }
           ]

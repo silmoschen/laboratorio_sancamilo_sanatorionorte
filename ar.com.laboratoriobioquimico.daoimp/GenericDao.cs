@@ -26,6 +26,34 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             get { return sessionFactory.GetCurrentSession(); }
         }
 
+        protected virtual bool UseQueryCache
+        {
+            get { return false; }
+        }
+
+        protected virtual string QueryCacheRegion
+        {
+            get { return "CatalogosQueries"; }
+        }
+
+        private void ConfigureQuery(IQuery query)
+        {
+            query.SetFlushMode(FlushMode.Auto);
+            if (UseQueryCache)
+            {
+                query.SetCacheable(true);
+                query.SetCacheRegion(QueryCacheRegion);
+            }
+        }
+
+        protected void EvictSecondLevelCache()
+        {
+            if (sessionFactory.GetClassMetadata(typeof(T)) != null)
+                sessionFactory.Evict(typeof(T));
+            if (UseQueryCache)
+                sessionFactory.EvictQueries(QueryCacheRegion);
+        }
+
         public T get(L id)
         {
             try
@@ -51,7 +79,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
                 IQuery query = session.CreateQuery(strquery);
                 query.SetFirstResult(0);
                 query.SetMaxResults(1);
-                query.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(query);
                 if (l != null)
                     for (int i = 0; i < l.Count; i++) query.SetParameter("p" + Convert.ToString(i), l[i]);
                 query.List(lista);
@@ -206,6 +234,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             }
 
             session.CacheMode = CacheMode.Normal;
+            EvictSecondLevelCache();
             list.Clear();
          
             return ex;
@@ -239,6 +268,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             }
 
             session.CacheMode = CacheMode.Normal;
+            EvictSecondLevelCache();
             list.Clear();
             list = null;
 
@@ -272,6 +302,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             }
 
             session.CacheMode = CacheMode.Normal;
+            EvictSecondLevelCache();
             list.Clear();
             list = null;
 
@@ -283,7 +314,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             {
                 List<T> lista = new List<T>();
                 IQuery query = session.CreateQuery("from " + entity.GetType());
-                query.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(query);
                 query.List(lista);
                 return lista;
             }
@@ -298,7 +329,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             {
                 List<T> lista = new List<T>();
                 IQuery query = session.CreateQuery(strquery);
-                query.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(query);
                 query.List(lista);
                 return lista;
             }
@@ -314,7 +345,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             {
                 List<T> lista = new List<T>();
                 IQuery query = session.CreateQuery(strquery);
-                query.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(query);
                 if (pageNumber != null && pageSize != null)
                 {
                     if (pageNumber.Value > 0) query.SetFirstResult((pageNumber.Value - 1) * pageSize.Value);
@@ -335,7 +366,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             {
                 List<T> lista = new List<T>();
                 IQuery query = session.CreateQuery(strquery);
-                query.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(query);
                 for (int i = 0; i < l.Count; i++) query.SetParameter("p" + Convert.ToString(i), l[i]);
                 if (pageNumber > 0) query.SetFirstResult((pageNumber - 1) * pageSize);
                 if (pageSize > 0) query.SetMaxResults(pageSize);
@@ -354,7 +385,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             {
                 List<T> lista = new List<T>();
                 IQuery query = session.CreateQuery(strquery);
-                query.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(query);
                 for (int i = 0; i < l.Count; i++) query.SetParameter("p" + Convert.ToString(i), l[i]);
                 query.List(lista);
                 return lista;
@@ -371,7 +402,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             {
                 List<T> lista = new List<T>();
                 IQuery query = session.CreateQuery(strquery);
-                query.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(query);
                 query.List(lista);
                 return lista;
             }
@@ -387,7 +418,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             {
                 List<T> lista = new List<T>();
                 IQuery query = session.CreateQuery(strquery);
-                query.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(query);
                 for (int i = 0; i < l.Count; i++) query.SetParameter("p" + Convert.ToString(i), l[i]);
                 query.List(lista);
                 return lista;
@@ -404,7 +435,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             {
                 List<T> lista = new List<T>();
                 IQuery query = session.CreateQuery(strquery);
-                query.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(query);
                 if (l != null)
                     for (int i = 0; i < l.Count; i++) query.SetParameter("p" + Convert.ToString(i), l[i]);
                 query.SetFirstResult(0);
@@ -439,7 +470,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             try
             {
                 IQuery q = session.CreateQuery(strquery);
-                q.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(q);
                 Int64 iss = q.UniqueResult<Int64>();
                 return (iss / pageSize) + 1;
             }
@@ -454,7 +485,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             try
             {
                 IQuery q = session.CreateQuery(strquery);
-                q.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(q);
                 for (int i = 0; i < l.Count; i++) q.SetParameter("p" + Convert.ToString(i), l[i]);
                 Int64 iss = q.UniqueResult<Int64>();
                 return (iss / pageSize) + 1;
@@ -470,7 +501,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             try
             {
                 IQuery q = session.CreateQuery(strquery);
-                q.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(q);
                 if (l != null) for (int i = 0; i < l.Count; i++) q.SetParameter("p" + Convert.ToString(i), l[i]);
                 Int64 iss = q.UniqueResult<Int64>();
                 return iss;
@@ -486,7 +517,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             try
             {
                 IQuery q = session.CreateQuery(strquery);
-                q.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(q);
                 Int64 r = q.UniqueResult<Int64>();
                 return r;
             }
@@ -501,7 +532,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             try
             {
                 IQuery q = session.CreateQuery(strquery);
-                q.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+                ConfigureQuery(q);
                 for (int i = 0; i < l.Count; i++) q.SetParameter("p" + Convert.ToString(i), l[i]);
                 Int64 r = q.UniqueResult<Int64>();
                 return r;
@@ -519,6 +550,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
                 IQuery q = session.CreateQuery(query);
                 for (int i = 0; i < l.Count; i++) q.SetParameter("p" + Convert.ToString(i), l[i]);
                 q.ExecuteUpdate();
+                EvictSecondLevelCache();
             }
             catch (Exception)
             {
@@ -533,6 +565,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
                 IQuery q = session.CreateSQLQuery(query);
                 if (l != null) for (int i = 0; i < l.Count; i++) q.SetParameter("p" + Convert.ToString(i), l[i]);
                 q.ExecuteUpdate();
+                EvictSecondLevelCache();
             }
             catch (Exception)
             {

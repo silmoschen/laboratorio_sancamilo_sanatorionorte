@@ -1,9 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
 
   <class name="AnalisisSolicitudesInternacionItemsResultado" table="analisis_solicitudes_items_resultado_internacion" dynamic-update="true">
 
-    <cache usage="nonstrict-read-write" region="LongTerm" />
 
     <composite-id name="ID" class="AnalisisSolicitudesInternacionItemsResultadoPK">
       <key-property name="nrosolicitud" column="nrosolicitud" type="string"/>

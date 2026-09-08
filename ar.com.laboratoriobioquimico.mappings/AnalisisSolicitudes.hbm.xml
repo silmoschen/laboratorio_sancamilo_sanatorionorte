@@ -1,9 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="laboratoriobioquimico" namespace="laboratoriobioquimico.ar.com.laboratoriobioquimico.entities">
 
   <class name="AnalisisSolicitudes" table="analisis_solicitudes" dynamic-update="true" >
 
-    <cache usage="nonstrict-read-write" region="LongTerm" />
 
     <id name="nrosolicitud" column ="nrosolicitud" type="string" unsaved-value="0">
       <generator class="assigned"/>

@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.dao;
 using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities;
 
 namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
 {
-    public class ObrasSocialesDao: GenericDao<ObrasSociales, string>, IObrasSocialesDao
+    public class ObrasSocialesDao: CatalogDao<ObrasSociales, string>, IObrasSocialesDao
     {
         
         public IList<ObrasSociales> getAll(int pageNumber, int pageSize)

@@ -26,6 +26,10 @@
                         <input type="button" class="btn btn-secondary" value="Todos" onclick="seleccionarTodos(true)" />
                         <input type="button" class="btn btn-secondary" value="Ninguno" onclick="seleccionarTodos(false)" />
                         <input type="button" class="btn btn-success" value="Enviar" onclick="enviarLote()" />
+                        @if (Request.HttpMethod == "POST")
+                        {
+                            <span class="ms-2 align-middle">Protocolos encontrados: <strong>@(Model.ListProtocolosInternacion != null ? Model.ListProtocolosInternacion.Count : 0)</strong></span>
+                        }
                         <span id="divespera"></span>
                     </div>
                 </div>

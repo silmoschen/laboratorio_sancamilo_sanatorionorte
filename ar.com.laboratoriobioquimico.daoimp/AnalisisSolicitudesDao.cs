@@ -25,7 +25,7 @@ namespace laboratoriobioquimico.ar.com.laboratoriobioquimico.daoimp
             if (orderByDesc != null)
                 foreach (string c in orderByDesc) criteria.AddOrder(Order.Desc(c));
 
-            criteria.SetCacheable(true).SetFlushMode(FlushMode.Auto);
+            criteria.SetFlushMode(FlushMode.Auto);
 
             criteria.List(list);
             return list;
