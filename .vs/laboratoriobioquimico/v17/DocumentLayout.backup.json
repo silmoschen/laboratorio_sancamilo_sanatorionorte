@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|f:\\sidelphi32\\aspnet\\spring\\laboratorio_sancamilo_sanatorionorte\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E945915-8F18-4D41-9602-0DAE97C1DC4A}|laboratoriobioquimico.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\sidelphi32\\ASPNet\\Spring\\laboratorio_sancamilo_sanatorionorte\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAALcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-08T13:38:15.463Z",
+              "EditorCaption": ""
             }
           ]
         }

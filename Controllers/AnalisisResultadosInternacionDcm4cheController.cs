@@ -23,6 +23,8 @@ namespace laboratoriobioquimico.Controllers
 
         public ActionResult Index()
         {
+            if (!Dcm4cheHabilitado()) return RedirectToAction("Index", "Home");
+
             ModelFiltro entity = new ModelFiltro();
             entity.desde = DateTime.Now;
             entity.hasta = DateTime.Now;
@@ -36,6 +38,8 @@ namespace laboratoriobioquimico.Controllers
         [HttpPost]
         public ActionResult Index(ModelFiltro pojo)
         {
+            if (!Dcm4cheHabilitado()) return RedirectToAction("Index", "Home");
+
             CargarLista(pojo);
 
             if (Session["error"] != null) ViewBag.error = Session["error"];
@@ -47,6 +51,8 @@ namespace laboratoriobioquimico.Controllers
         [HttpPost]
         public ActionResult Enviar(ModelFiltro pojo)
         {
+            if (!Dcm4cheHabilitado()) return RedirectToAction("Index", "Home");
+
             int enviados = 0;
             int errores = 0;
 
@@ -75,6 +81,12 @@ namespace laboratoriobioquimico.Controllers
             ViewBag.error = "Proceso finalizado. Enviados: " + enviados + ". Con error: " + errores + ".";
 
             return View("Index", pojo);
+        }
+
+        private bool Dcm4cheHabilitado()
+        {
+            Parametros parametro = parametroService.find(1);
+            return parametro != null && parametro.Opt1;
         }
 
         private void CargarLista(ModelFiltro pojo)
