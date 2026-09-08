@@ -1,0 +1,125 @@
+@model laboratoriobioquimico.Models.ModelFiltro
+@using laboratoriobioquimico.ar.com.laboratoriobioquimico.entities
+@using (Html.BeginForm("Index", "AnalisisResultadosInternacionDcm4che", FormMethod.Post, new { id = "formFiltro", enctype = "form" }))
+{
+    <div class="row">
+        <div class="card mb-3">
+            <div class="card-header bg-primary text-white">
+                Envío Resultado Int. en Lotes dcm4che
+            </div>
+            <div class="card-body">
+                <div class="row mb-3 align-items-center">
+                    <div class="col-sm-1">
+                        Desde
+                    </div>
+                    <div class="col-sm-2">
+                        @Html.TextBoxFor(model => model.desde, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
+                    </div>
+                    <div class="col-sm-1">
+                        Hasta
+                    </div>
+                    <div class="col-sm-2">
+                        @Html.TextBoxFor(model => model.hasta, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="submit" class="btn btn-primary" value="Buscar" />
+                        <input type="button" class="btn btn-secondary" value="Todos" onclick="seleccionarTodos(true)" />
+                        <input type="button" class="btn btn-secondary" value="Ninguno" onclick="seleccionarTodos(false)" />
+                        <input type="button" class="btn btn-success" value="Enviar" onclick="enviarLote()" />
+                        <span id="divespera"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Fecha</th>
+                <th>Protocolo</th>
+                <th>Paciente</th>
+                <th>Nro.Doc.</th>
+                <th>Obra Social</th>
+                <th>Profesional</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.ListProtocolosInternacion != null)
+            {
+                for (int i = 0; i < Model.ListProtocolosInternacion.Count; i++)
+                {
+                    <tr>
+                        <td valign="top">
+                            @Html.HiddenFor(model => model.ListProtocolosInternacion[i].nrosolicitud)
+                            @Html.CheckBoxFor(model => model.ListProtocolosInternacion[i].dcm4che)
+                        </td>
+                        <td valign="top">
+                            @Model.ListProtocolosInternacion[i].fecha1
+                        </td>
+                        <td valign="top">
+                            @Model.ListProtocolosInternacion[i].nrosolicitud
+                        </td>
+                        <td valign="top" width="20%">
+                            @if (Model.ListProtocolosInternacion[i].paciente != null)
+                            {
+                                @Model.ListProtocolosInternacion[i].paciente.nombre
+                            }
+
+                            @if (Model.ListProtocolosInternacion[i].logsDcm4che != null && Model.ListProtocolosInternacion[i].logsDcm4che.Count > 0)
+                            {
+                                <span style="font-size:8.0pt">
+                                    <ul type="square">
+                                        @foreach (AnalisisSolicitudesInternacionSenddcm4che envio in Model.ListProtocolosInternacion[i].logsDcm4che)
+                                        {
+                                            <li style="color:navy">@(envio.fechahora + " " + envio.opt1 + " " + envio.opt2 + " " + envio.estado)</li>
+                                        }
+                                    </ul>
+                                </span>
+                            }
+                        </td>
+                        <td valign="top">
+                            @if (Model.ListProtocolosInternacion[i].paciente != null)
+                            {
+                                @Model.ListProtocolosInternacion[i].paciente.nrodoc
+                            }
+                        </td>
+                        <td valign="top" width="20%">
+                            @if (Model.ListProtocolosInternacion[i].obrasocial != null)
+                            {
+                                @Model.ListProtocolosInternacion[i].obrasocial.nombre
+                            }
+                        </td>
+                        <td valign="top">
+                            @if (Model.ListProtocolosInternacion[i].profesional != null)
+                            {
+                                @Model.ListProtocolosInternacion[i].profesional.nombre
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+<div class="text-danger">
+    @ViewBag.error
+</div>
+<script type="text/javascript">
+    function seleccionarTodos(valor) {
+        $('input[type=checkbox][name$=".dcm4che"]').prop('checked', valor);
+    }
+
+    function enviarLote() {
+        if ($('input[type=checkbox][name$=".dcm4che"]:checked').length == 0) {
+            alert('Seleccione al menos un protocolo');
+            return;
+        }
+        if (!confirm('¿Confirma el envío a dcm4che de los protocolos seleccionados?')) return;
+        $("#divespera").html('Procesando ...');
+        var form = document.getElementById('formFiltro');
+        form.action = '@Url.Action("Enviar", "AnalisisResultadosInternacionDcm4che")';
+        form.submit();
+    }
+</script>

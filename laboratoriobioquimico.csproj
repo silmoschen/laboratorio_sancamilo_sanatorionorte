@@ -331,6 +331,7 @@
     <Compile Include="Controllers\HomePacienteController.cs" />
     <Compile Include="Controllers\RestAnalisisResultadoController.cs" />
     <Compile Include="Models\ModelEstadistica.cs" />
+    <Compile Include="Models\ModelFiltro.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\Logs.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\NbuinosInternacion.cs" />
     <Compile Include="ar.com.laboratoriobioquimico.entities\NbuInternacion.cs" />
@@ -411,6 +412,7 @@
     <Compile Include="ar.com.laboratoriobioquimico._filters\UpdateFilter.cs" />
     <Compile Include="Aspect\ExceptionAdvice.cs" />
     <Compile Include="Controllers\AnalisisResultadosInternacionController.cs" />
+    <Compile Include="Controllers\AnalisisResultadosInternacionDcm4cheController.cs" />
     <Compile Include="Controllers\AnalisisResultadosController.cs" />
     <Compile Include="Controllers\CambiarClaveController.cs" />
     <Compile Include="Controllers\ErrorAuthorizeController.cs" />
@@ -880,6 +882,7 @@
     <Content Include="Views\AnalisisResultados\SendMail.cshtml" />
     <Content Include="Views\AnalisisResultadosInternacion\SendMail.cshtml" />
     <Content Include="Views\AnalisisResultadosInternacion\Senddcm4che.cshtml" />
+    <Content Include="Views\AnalisisResultadosInternacionDcm4che\Index.cshtml" />
     <Content Include="sql\analisis_solicitudes_internacion_send_dcm4che.sql" />
     <Content Include="Views\AnalisisResultados\addFiles.cshtml" />
     <Content Include="Views\AnalisisResultadosInternacion\addFiles.cshtml" />
