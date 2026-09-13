@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
@@ -30,8 +30,9 @@
                             <TextRun>
                               <Value>Período:</Value>
                               <Style>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <Color>#5b6b7c</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -45,6 +46,7 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+                        <BackgroundColor>#f4f7fb</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -64,8 +66,10 @@
                             <TextRun>
                               <Value>=Fields!Col1.Value</Value>
                               <Style>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Color>#1d2a38</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -79,6 +83,7 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+                        <BackgroundColor>#f4f7fb</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -98,8 +103,10 @@
                             <TextRun>
                               <Value />
                               <Style>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Color>#1d2a38</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -113,6 +120,7 @@
                         <Border>
                           <Style>None</Style>
                         </Border>
+                        <BackgroundColor>#f4f7fb</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -124,7 +132,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.4cm</Height>
+              <Height>0.24cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -137,7 +145,9 @@
                             <TextRun>
                               <Value>=Fields!Col2.Value</Value>
                               <Style>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontSize>8pt</FontSize>
+                                <Color>#1d2a38</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -153,8 +163,6 @@
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -170,7 +178,9 @@
                             <TextRun>
                               <Value>=Fields!Col3.Value</Value>
                               <Style>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontSize>8pt</FontSize>
+                                <Color>#1d2a38</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -186,8 +196,6 @@
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -203,7 +211,9 @@
                             <TextRun>
                               <Value>=Fields!Long1.Value</Value>
                               <Style>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontSize>8pt</FontSize>
+                                <Color>#1d2a38</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -219,11 +229,8 @@
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -242,7 +249,9 @@
                             <TextRun>
                               <Value />
                               <Style>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontSize>6pt</FontSize>
+                                <Color>#1d2a38</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -273,7 +282,9 @@
                             <TextRun>
                               <Value>=Fields!Col7.Value</Value>
                               <Style>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontSize>6pt</FontSize>
+                                <Color>#1d2a38</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -362,7 +373,9 @@
                           <TextRun>
                             <Value />
                             <Style>
+                              <FontFamily>Calibri</FontFamily>
                               <FontSize>7pt</FontSize>
+                              <Color>#1d2a38</Color>
                             </Style>
                           </TextRun>
                         </TextRuns>
@@ -396,8 +409,10 @@
                               <TextRun>
                                 <Value />
                                 <Style>
+                                  <FontFamily>Calibri</FontFamily>
                                   <FontSize>7pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
+                                  <Color>#1d2a38</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
@@ -436,7 +451,9 @@
                                   <TextRun>
                                     <Value />
                                     <Style>
+                                      <FontFamily>Calibri</FontFamily>
                                       <FontSize>8pt</FontSize>
+                                      <Color>#1d2a38</Color>
                                     </Style>
                                   </TextRun>
                                 </TextRuns>
@@ -466,7 +483,11 @@
                           <Group Name="Details" />
                           <TablixMembers>
                             <TablixMember />
-                            <TablixMember />
+                            <TablixMember>
+                              <Visibility>
+                                <Hidden>=IsNothing(Fields!Col7.Value) Or Len(Trim(CStr(Fields!Col7.Value))) = 0</Hidden>
+                              </Visibility>
+                            </TablixMember>
                           </TablixMembers>
                         </TablixMember>
                         <TablixMember>
@@ -483,7 +504,7 @@
         <DataSetName>DataSet</DataSetName>
         <Top>0.22966cm</Top>
         <Left>0.12383cm</Left>
-        <Height>1.90312cm</Height>
+        <Height>1.74312cm</Height>
         <Width>15.58281cm</Width>
         <Style>
           <Border>
@@ -512,13 +533,15 @@
                   <Value>=First(Fields!Titulo1.Value, "DataSet")</Value>
                   <MarkupType>HTML</MarkupType>
                   <Style>
+                    <FontFamily>Calibri</FontFamily>
                     <FontSize>9pt</FontSize>
                     <FontWeight>Bold</FontWeight>
+                    <Color>#1d2a38</Color>
                   </Style>
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Left</TextAlign>
+                <TextAlign>Center</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
@@ -545,7 +568,9 @@
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
+              <Color>#0d6efd</Color>
               <Style>Solid</Style>
+              <Width>1.5pt</Width>
             </Border>
           </Style>
         </Line>
@@ -558,7 +583,9 @@
                 <TextRun>
                   <Value>Código</Value>
                   <Style>
+                    <FontFamily>Calibri</FontFamily>
                     <FontSize>8pt</FontSize>
+                    <Color>#5b6b7c</Color>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -589,6 +616,7 @@
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
+              <Color>#e2e8f0</Color>
               <Style>Solid</Style>
             </Border>
           </Style>
@@ -602,7 +630,9 @@
                 <TextRun>
                   <Value>Cant. Determinaciones</Value>
                   <Style>
+                    <FontFamily>Calibri</FontFamily>
                     <FontSize>8pt</FontSize>
+                    <Color>#5b6b7c</Color>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -636,7 +666,9 @@
                 <TextRun>
                   <Value>Obra Social</Value>
                   <Style>
+                    <FontFamily>Calibri</FontFamily>
                     <FontSize>8pt</FontSize>
+                    <Color>#5b6b7c</Color>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -667,9 +699,45 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>0.5027cm</Height>
+      <Height>0.8cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="TextboxPageNumber">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="PÃ¡g.: " &amp; Globals!PageNumber &amp; " de " &amp; Globals!TotalPages</Value>
+                  <Style>
+                    <FontFamily>Calibri</FontFamily>
+                    <FontSize>8pt</FontSize>
+                    <Color>#5b6b7c</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.15cm</Top>
+          <Left>0.18203cm</Left>
+          <Height>0.45cm</Height>
+          <Width>6cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>
