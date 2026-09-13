@@ -147,14 +147,14 @@
 }
 
 .pager-bar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: max-content 1fr;
     align-items: center;
-    justify-content: space-between;
-    gap: 8px 14px;
+    column-gap: 14px;
+    width: 100%;
+    text-align: left;
     margin: 16px 0 8px;
-    padding: 6px 12px;
+    padding: 6px 12px 6px 12px;
     background: #f4f7fb;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
@@ -166,10 +166,12 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-self: start;
     gap: 6px;
     white-space: nowrap;
-    margin-left: auto;
+    margin: 0;
+    text-align: left;
 }
 
 .pager-meta strong {
@@ -184,9 +186,11 @@
 }
 
 .pagination.pager-pages {
-    margin-bottom: 0;
+    margin: 0;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-self: end;
+    justify-content: flex-end;
+    width: auto;
     gap: 3px;
 }
 

@@ -41,6 +41,19 @@
 }
 
 <nav class="pager-bar" aria-label="Paginaci&oacute;n">
+    <div class="pager-meta">
+        @if (hayResultados)
+        {
+            <span><strong>@totalRegistros</strong> registros</span>
+            <span class="pager-separator" aria-hidden="true"></span>
+            <span><strong>@paginaActual</strong> / <strong>@totalPaginas</strong></span>
+        }
+        else
+        {
+            <span>No hay resultados para esta b&uacute;squeda</span>
+        }
+    </div>
+
     @if (hayResultados)
     {
         <ul class="pagination pager-pages">
@@ -133,17 +146,4 @@
             </li>
         </ul>
     }
-
-    <div class="pager-meta">
-        @if (hayResultados)
-        {
-            <span><strong>@totalRegistros</strong> registros</span>
-            <span class="pager-separator" aria-hidden="true"></span>
-            <span><strong>@paginaActual</strong> / <strong>@totalPaginas</strong></span>
-        }
-        else
-        {
-            <span>No hay resultados para esta b&uacute;squeda</span>
-        }
-    </div>
 </nav>
